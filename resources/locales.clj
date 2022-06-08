@@ -14,6 +14,7 @@
    "ca"
    "sv"
    "zh-HK"
+   "en_GB"
    "fr"
    "pt-BR"
    "de"

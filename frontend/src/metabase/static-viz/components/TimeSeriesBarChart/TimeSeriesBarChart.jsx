@@ -43,7 +43,7 @@ const layout = {
   },
   font: {
     size: 11,
-    family: "Lato, sans-serif",
+    family: "Roboto, sans-serif",
   },
   colors: {
     brand: "#509ee3",

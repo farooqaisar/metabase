@@ -419,7 +419,7 @@
       (into [:div {:style (style/style {:clear :both :width "540px" :color "#4C5773"})}]
             (for [label (map first rows)]
               [:div {:style (style/style {:float       :left :margin-right "12px"
-                                          :font-family "Lato, sans-serif"
+                                          :font-family "Roboto, sans-serif"
                                           :font-size   "16px"})}
                [:span {:style (style/style {:color (legend-colors label)})}
                 "•"]

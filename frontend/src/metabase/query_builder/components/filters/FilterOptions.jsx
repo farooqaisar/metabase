@@ -100,7 +100,7 @@ export default class FilterOptions extends Component {
           <div key={name} className="flex align-center">
             <CheckBox
               label={this.getOptionName(name)}
-              checkedColor="accent2"
+              checkedColor="taupe"
               checked={this.getOptionValue(name)}
               onChange={() => this.toggleOptionValue(name)}
             />

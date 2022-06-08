@@ -117,7 +117,7 @@ export default class SelectPicker extends Component {
                   >
                     <CheckBox
                       checked={checked.has(option.key)}
-                      checkedColor="accent2"
+                      checkedColor="taupe"
                     />
                     <h4 className="ml1">{this.nameForOption(option)}</h4>
                   </label>

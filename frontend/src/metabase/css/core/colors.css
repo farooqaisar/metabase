@@ -10,14 +10,15 @@
   --color-navbackground: #f8f8f8;
   --color-border: #f0f0f0;
   --color-brand: #026bc8;
-  --color-accent1: #7172ad;
-  --color-accent2: #5b5e65;
+  --color-accent1: #90c9ff;
+  --color-accent2: #bbe29b;
+  --color-accent3: #d389c6;
+  --color-accent4: #f5db75;
+  --color-accent5: #e37575;
+  --color-accent6: #ffb581;
+  --color-accent7: #9191e2;
+  --color-dbicons: #5b5e65;
   /* end - ellucian - additional and updated colors */
-  --color-accent3: #ef8c8c;
-  --color-accent4: #f9d45c;
-  --color-accent5: #f2a86f;
-  --color-accent6: #98d9d9;
-  --color-accent7: #7172ad;
   --color-brand-light: #ddecfa;
   --color-white: #ffffff;
   --color-black: #2e353b;

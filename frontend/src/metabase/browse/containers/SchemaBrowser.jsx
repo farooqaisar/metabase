@@ -51,7 +51,7 @@ function SchemaBrowser(props) {
                       schema.name,
                     )}`}
                     mb={1}
-                    hover={{ color: color("accent2") }}
+                    hover={{ color: color("taupe") }}
                     data-metabase-event={`${ANALYTICS_CONTEXT};Schema Click`}
                     className="overflow-hidden"
                   >
@@ -59,7 +59,7 @@ function SchemaBrowser(props) {
                       <EntityItem
                         name={schema.name}
                         iconName="folder"
-                        iconColor={color("accent2")}
+                        iconColor={color("taupe")}
                         item={schema}
                       />
                     </Card>

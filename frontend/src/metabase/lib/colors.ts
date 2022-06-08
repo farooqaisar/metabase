@@ -12,16 +12,17 @@ const colors: Record<string, string> = {
   navbackground: "#F8F8F8",
   navborder: "#D9D9D9",
   border: "#F0F0F0",
-  // end - ellucian - additional and updated colors
   brand: "#026BC8",
+  accent1: "#90C9FF",
+  accent2: "#BBE29B",
+  accent3: "#D389C6",
+  accent4: "#F5DB75",
+  accent5: "#E37575",
+  accent6: "#FFB581",
+  accent7: "#9191E2",
+  taupe: "#5B5E65",
+  // end - ellucian - additional and updated colors
   "brand-light": "#ddecfa",
-  accent1: "#7172AD",
-  accent2: "#5B5E65",
-  accent3: "#EF8C8C",
-  accent4: "#F9D45C",
-  accent5: "#F2A86F",
-  accent6: "#98D9D9",
-  accent7: "#7172AD",
   "admin-navbar": "#7172AD",
   white: "#FFFFFF",
   black: "#2E353B",
@@ -57,9 +58,9 @@ export type ColorString = string;
 
 export default colors;
 export const aliases: Record<string, string> = {
-  summarize: "accent1",
+  summarize: "accent7",
   filter: "accent7",
-  database: "accent2",
+  database: "taupe",
   dashboard: "brand",
   pulse: "accent4",
   content: "bg-light",
