@@ -1,0 +1,829 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Metabase\n"
+"Language: en-GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: frontend/src/metabase/query_builder/components/QueryVisualization.jsx:124
+msgid "Doing science"
+msgstr " "
+
+#: frontend/src/metabase/query_builder/components/expressions/ExpressionWidget.jsx:84
+msgid "Give it a name"
+msgstr "CUSTOM COUMN NAME"
+
+#: frontend/src/metabase/query_builder/components/expressions/ExpressionWidget.jsx:90
+msgid "Something nice and descriptive"
+msgstr " "
+
+#: frontend/src/metabase/query_builder/components/VisualizationResult.jsx:56
+#: frontend/src/metabase/visualizations/components/Visualization.jsx:465
+msgid "No results!"
+msgstr "No results"
+
+#: frontend/src/metabase/query_builder/components/VisualizationResult.jsx:57
+msgid "This may be the answer you’re looking for. If not, try removing or changing your filters to make them less specific."
+msgstr "Try removing filters or changing your filters to make them less specific your filters to make them less specific."
+
+#: frontend/src/metabase/containers/SaveQuestionModal.jsx:152
+#: frontend/src/metabase/entities/collections/forms.js:33
+#: frontend/src/metabase/entities/dashboards/forms.js:17
+#: frontend/src/metabase/entities/questions/forms.js:11
+#: frontend/src/metabase/entities/snippet-collections.js:83
+#: frontend/src/metabase/entities/snippets.js:28
+msgid "It's optional but oh, so helpful"
+msgstr "Optional"
+
+#: frontend/src/metabase/containers/SaveQuestionModal.jsx:146
+msgid "What is the name of your card?"
+msgstr "What is the name of your report?"
+
+#: frontend/src/metabase/entities/collections/forms.js:23
+msgid "My new fantastic collection"
+msgstr "What is the name of your collection?"
+
+#: frontend/src/metabase/query_builder/components/ImpossibleToCreateModelModal/ImpossibleToCreateModelModal.tsx:24
+msgid "reference the results of another saved question"
+msgstr "reference the results of another saved report"
+
+#: frontend/src/metabase/query_builder/components/ImpossibleToCreateModelModal/ImpossibleToCreateModelModal.tsx:34
+#, javascript-format
+msgid "To solve this, just remove the variables in this question and try again. (It's okay to use {0} or {1} in your query.)"
+msgstr "To solve this, just remove the variables in this report and try again. (It's okay to use {0} or {1} in your query.)"
+
+#: frontend/src/metabase/collections/components/PinnedItemCard/PinnedItemCard.tsx:30
+msgid "A question"
+msgstr "A report"
+
+#: frontend/src/metabase/collections/components/EmptyPinnedItemsBanner/EmptyPinnedItemsBanner.tsx:10
+msgid "Save your questions, dashboards, and models in collections — and pin them to feature them at the top."
+msgstr "Save your reports, dashboards, and models in collections — and pin them to feature them at the top."
+
+#: frontend/src/metabase/setup/components/PreferencesStep/PreferencesStep.tsx:84
+#, javascript-format
+msgid "Metabase {0} collects anything about your data or question results."
+msgstr "Insights {0} collects anything about your data or report results."
+
+#: frontend/src/metabase/home/homepage/components/CollectionSection/CollectionSection.tsx:70
+#, javascript-format
+msgid "Save dashboards, questions, and collections in \"{0}\""
+msgstr "Save dashboards, reports, and collections in \"{0}\""
+
+#: frontend/src/metabase/home/homepage/components/CollectionSection/CollectionSection.tsx:71
+msgid "Access dashboards, questions, and collections in \"{0}\""
+msgstr "Access dashboards, reports, and collections in \"{0}\""
+
+#: frontend/src/metabase/query_builder/actions.js:1578
+msgid "This is a question now."
+msgstr "This is a report now."
+
+#: frontend/src/metabase/routes.jsx:231
+msgid "New Question"
+msgstr "New Report"
+
+#: enterprise/frontend/src/metabase-enterprise/tools/containers/ErrorDetail.jsx:152
+msgid "Rerun this question"
+msgstr "Rerun this report"
+
+#: frontend/src/metabase/components/EntityMenu.info.js:26
+#: frontend/src/metabase/components/EntityMenu.info.js:82
+msgid "Edit this question"
+msgstr "Edit this report"
+
+#: frontend/src/metabase/containers/AddToDashSelectDashModal.jsx:59
+msgid "Add this question to a dashboard"
+msgstr "Add this report to a dashboard"
+
+#: frontend/src/metabase/containers/SaveQuestionModal.jsx:101
+msgid "First, save your question"
+msgstr "First, save your report""
+
+#: frontend/src/metabase/containers/SaveQuestionModal.jsx:102
+msgid "Save question"
+msgstr "Save report"
+
+#: frontend/src/metabase/containers/SaveQuestionModal.jsx:176
+#, javascript-format
+msgid "Replace original question, \"{0}\""
+msgstr "Replace original report, \"{0}\"""
+
+#: frontend/src/metabase/containers/SaveQuestionModal.jsx:180
+msgid "Save as new question"
+msgstr "Save as new report"
+
+#: frontend/src/metabase/dashboard/components/AddSeriesModal/AddSeriesModal.jsx:195
+msgid "Applying Question"
+msgstr "Applying Report"
+
+#: frontend/src/metabase/dashboard/components/AddSeriesModal/AddSeriesModal.jsx:199
+msgid "That question isn't compatible"
+msgstr "That report isn't compatible"
+
+#: frontend/src/metabase/entities/databases/big-query-fields.js:165
+#: src/metabase/driver/common.clj
+msgid "Metabase can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database."
+msgstr "Insights can scan the values present in each field in this database to enable checkbox filters in dashboards and reports. This can be a somewhat resource-intensive process, particularly if you have a very large database."
+
+#: frontend/src/metabase/entities/dashboards/forms.js:42
+msgid "Cache all question results for"
+msgstr "Cache all report results for"
+
+#: frontend/src/metabase/home/components/Activity.jsx:157
+msgid "saved a question about "
+msgstr "saved a report about "
+
+#: frontend/src/metabase/home/components/Activity.jsx:171
+msgid "saved a question"
+msgstr "saved a report"
+
+#: frontend/src/metabase/home/components/Activity.jsx:176
+msgid "deleted a question"
+msgstr "deleted a report"
+
+#: frontend/src/metabase/home/components/Activity.jsx:188
+#: frontend/src/metabase/home/components/Activity.jsx:206
+msgid "added a question to the dashboard - "
+msgstr "added a report to the dashboard - "
+
+#: frontend/src/metabase/home/components/Activity.jsx:216
+#: frontend/src/metabase/home/components/Activity.jsx:234
+msgid "removed a question from the dashboard - "
+msgstr "removed a report from the dashboard - "
+
+#: frontend/src/metabase/home/components/Activity.jsx:537
+msgid "Save a question and get this baby going!"
+msgstr "Save a report and get this baby going!"
+
+#: frontend/src/metabase/lib/click-behavior.js:194
+msgid "Go to question"
+msgstr "Go to report"
+
+#: frontend/src/metabase/lib/core.js:354
+msgid "This field won't be visible or selectable in questions created with the GUI interfaces. It will still be accessible in SQL/native queries."
+msgstr "This field won't be visible or selectable in reports created with the GUI interfaces. It will still be accessible in SQL/native queries."
+
+#: frontend/src/metabase/collections/components/NewCollectionItemMenu.jsx:19
+#: frontend/src/metabase/nav/components/utils.js:4
+#: frontend/src/metabase/nav/containers/Navbar.jsx:169
+#: frontend/src/metabase/query_builder/containers/QueryBuilder.jsx:158
+msgid "Question"
+msgstr "Report"
+
+#: frontend/src/metabase/pulse/components/PulseCardPreview.jsx:127
+msgid "This question will be added as a file attachment"
+msgstr "This report will be added as a file attachment"
+
+#: frontend/src/metabase/pulse/components/PulseCardPreview.jsx:128
+msgid "This question won't be included in your Pulse"
+msgstr "This report won't be included in your Pulse"
+
+#: frontend/src/metabase/query_builder/containers/ArchiveQuestionModal.jsx:31
+msgid "Archive this question?"
+msgstr ""Archive this report?"
+
+#: frontend/src/metabase/query_builder/containers/ArchiveQuestionModal.jsx:35
+msgid "This question will be removed from any dashboards or pulses using it."
+msgstr "This report will be removed from any dashboards or pulses using it."
+
+#: frontend/src/metabase/new_query/containers/NewQueryOptions.jsx:84
+msgid "Simple question"
+msgstr "Simple report"
+
+#: frontend/src/metabase/new_query/containers/NewQueryOptions.jsx:96
+msgid "Custom question"
+msgstr "Report"
+
+#: frontend/src/metabase/new_query/containers/NewQueryOptions.jsx:111
+#: src/metabase/automagic_dashboards/core.clj
+#: target/classes/metabase/automagic_dashboards/core.clj
+#: resources/automagic_dashboards/table/example.yaml
+msgid "Native query"
+msgstr "SQL query"
+
+#: frontend/src/metabase/new_query/containers/NewQueryOptions.jsx:112
+msgid "For more complicated questions, you can write your own SQL or native query."
+msgstr "For more complicated reports, you can write your own SQL or native query."
+
+#: enterprise/frontend/src/metabase-enterprise/caching/index.js:18
+msgid "How long to keep question results. By default, Metabase will use the value you supply on the {0}, but if this database has other factors that influence the freshness of data, it could make sense to set a custom duration. You can also choose custom durations on individual questions or dashboards to help improve performance."
+msgstr "How long to keep report results. By default, Insights will use the value you supply on the {0}, but if this database has other factors that influence the freshness of data, it could make sense to set a custom duration. You can also choose custom durations on individual reports or dashboards to help improve performance."
+
+#: enterprise/frontend/src/metabase-enterprise/auth/index.js:78
+#, javascript-format
+msgid "Use the settings below to configure your SSO via SAML. If you have any questions, check out our {0}."
+msgstr "Use the settings below to configure your SSO via SAML. If you have any reports, check out our {0}."
+
+#: enterprise/frontend/src/metabase-enterprise/sandboxes/components/GTAPModal.jsx:328
+msgid "rows in the {0} question"
+msgstr "rows in the {0} report"
+
+#: enterprise/frontend/src/metabase-enterprise/sandboxes/components/GTAPModal.jsx:157
+msgid "When users in this group view this table they'll see a version of it that's filtered by their user attributes, or a custom view of it based on a saved question."
+msgstr "When users in this group view this table they'll see a version of it that's filtered by their user attributes, or a custom view of it based on a saved report."
+
+#: enterprise/frontend/src/metabase-enterprise/sandboxes/components/GTAPModal.jsx:179
+msgid "Pick a saved question that returns the custom view of this table that these users should see."
+msgstr "Pick a saved report that returns the custom view of this table that these users should see."
+
+#: enterprise/frontend/src/metabase-enterprise/sandboxes/components/GTAPModal.jsx:197
+msgid "You can optionally add additional filters here based on user attributes. These filters will be applied on top of any filters that are already in this saved question."
+msgstr "You can optionally add additional filters here based on user attributes. These filters will be applied on top of any filters that are already in this saved report."
+
+#: enterprise/frontend/src/metabase-enterprise/tools/routes.jsx:15
+msgid "Erroring Questions"
+msgstr "Erroring Reports"
+
+#: frontend/src/metabase/admin/settings/selectors.js:290
+msgid "Shared Questions"
+msgstr "Shared Reports"
+
+#: frontend/src/metabase/admin/settings/selectors.js:347
+msgid "Embedded Questions"
+msgstr "Embedded Reports"
+
+#: frontend/src/metabase/browse/components/TableBrowser/TableBrowser.jsx:145
+#: frontend/src/metabase/query_builder/components/DataSelector.jsx:1196
+#: frontend/src/metabase/query_builder/components/DataSelector.jsx:1313
+#: frontend/src/metabase/query_builder/components/saved-question-picker/SavedQuestionPicker.jsx:117
+#: src/metabase/api/database.clj target/classes/metabase/api/database.clj
+msgid "Saved Questions"
+msgstr "Saved Reports"
+
+#: frontend/src/metabase/dashboard/components/DashCardCardParameterMapper.jsx:101
+msgid "You don’t have permission to see this question’s columns."
+msgstr "You don’t have permission to see this report’s columns."
+
+#: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar.jsx:568
+msgid "Saved question"
+msgstr "Saved report"
+
+#: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar.jsx:735
+msgid "Pick a question..."
+msgstr "Pick a report..."
+
+#: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar.jsx:767
+msgid "Pick a question to link to"
+msgstr "Pick a report to link to"
+
+#: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar.jsx:796
+msgid "Pass values to this question's variables (optional)"
+msgstr "Pass values to this report's variables (optional)"
+
+#: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar.jsx:797
+msgid "Pass values to filter this question (optional)"
+msgstr "Pass values to filter this report (optional)"
+
+#: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:150
+msgid "Add questions"
+msgstr "Add report"
+
+#: frontend/src/metabase/dashboard/components/RemoveFromDashboardModal.jsx:30
+msgid "Remove this question?"
+msgstr "Remove this report?"
+
+#: enterprise/frontend/src/metabase-enterprise/audit_app/components/AuditSidebar.jsx:61
+#: frontend/src/metabase/home/containers/SearchApp.jsx:52
+msgid "Questions"
+msgstr "Reports"
+
+#: frontend/src/metabase/home/components/RecentViews.jsx:81
+msgid "You haven't looked at any dashboards or questions recently"
+msgstr "You haven't looked at any dashboards or reports recently"
+
+#: frontend/src/metabase/lib/revisions/revisions.js:59
+msgid "modified question's series"
+msgstr "modified report's series"
+
+#: frontend/src/metabase/lib/revisions/revisions.js:62
+msgid "added series to a question"
+msgstr "added series to a report"
+
+#: frontend/src/metabase/lib/revisions/revisions.js:63
+msgid "removed series from a question"
+msgstr "removed series from a report"
+
+#: frontend/src/metabase/lib/revisions/revisions.js:103
+msgid "changed this from a model to a saved question"
+msgstr "changed this from a model to a saved report"
+
+#: frontend/src/metabase/lib/revisions/revisions.js:106
+#: frontend/src/metabase/lib/revisions/revisions.js:107
+msgid "edited the question"
+msgstr "edited the report"
+
+#: frontend/src/metabase/pulse/components/PulseEditSkip.jsx:24
+msgid "Skip a scheduled Pulse if none of its questions have any results"
+msgstr "Skip a scheduled Pulse if none of its reports have any results"
+
+#: frontend/src/metabase/pulse/components/PulseEditCards.jsx:113
+msgid "Raw data questions can only be included as email attachments"
+msgstr "Raw data reports can only be included as email attachments"
+
+#: frontend/src/metabase/pulse/components/PulseEditCards.jsx:163
+msgid "Choose questions you'd like to send in this pulse"
+msgstr "Choose reports you'd like to send in this pulse"
+
+#: frontend/src/metabase/query_builder/components/AlertModals.jsx:232
+#, javascript-format
+msgid "When a raw data question {0}"
+msgstr "When a raw data report {0}"
+
+#: frontend/src/metabase/query_builder/components/AlertModals.jsx:678
+#, javascript-format
+msgid "{0} This kind of alert is most useful when your saved question doesn’t {1} return any results, but you want to know when it does."
+msgstr "{0} This kind of alert is most useful when your saved report doesn’t {1} return any results, but you want to know when it does."
+
+#: frontend/src/metabase/query_builder/components/DataSelector.jsx:996
+msgid "Search for a question…"
+msgstr "Search for a report…"
+
+#: frontend/src/metabase/query_builder/components/DataSelector.jsx:1186
+msgid "The best starting place for new questions."
+msgstr "The best starting place for new reports."
+
+#: frontend/src/metabase/query_builder/components/DataSelector.jsx:1198
+msgid "Use any question’s results to start a new question."
+msgstr "Use any question’s results to start a new report."
+
+#: frontend/src/metabase/query_builder/components/DataSelector.jsx:1481
+msgid "Is a question missing?"
+msgstr "Is a report missing?"
+
+#: frontend/src/metabase/query_builder/components/NativeQueryEditor/DataSourceSelectors/DataSourceSelectors.jsx:165
+#, javascript-format
+msgid "This question is written in {0}."
+msgstr "This report is written in {0}."
+
+#: frontend/src/metabase/query_builder/components/NewDatasetModal/NewDatasetModal.jsx:58
+msgid "Show up higher in search results and get highlighted when other\nusers start new questions to promote reuse."
+msgstr "msgid "Show up higher in search results and get highlighted when other\nusers start new reports to promote reuse."
+
+#: frontend/src/metabase/query_builder/components/QuestionActionButtons.jsx:51
+msgid "Duplicate this question"
+msgstr "Duplicate this report"
+
+#: frontend/src/metabase/query_builder/components/RunButtonWithTooltip.jsx:17
+#, javascript-format
+msgid "This question will take approximately {0} to refresh"
+msgstr "This report will take approximately {0} to refresh"
+
+#: frontend/src/metabase/query_builder/components/SavedQuestionIntroModal.jsx:15
+msgid "It's okay to play around with saved questions"
+msgstr "It's okay to play around with saved reports"
+
+#: frontend/src/metabase/query_builder/components/SavedQuestionIntroModal.jsx:18
+msgid "You won't make any permanent changes to a saved question unless you click Save and choose to replace the original question."
+msgstr "You won't make any permanent changes to a saved report unless you click Save and choose to replace the original report."
+
+#: frontend/src/metabase/query_builder/components/VisualizationError.jsx:104
+msgid "Your question took too long"
+msgstr "Your report took too long"
+
+#: frontend/src/metabase/query_builder/components/VisualizationError.jsx:159
+msgid "There was a problem with your question"
+msgstr "There was a problem with your report"
+
+#: frontend/src/metabase/query_builder/components/template_tags/CardTagEditor.jsx:46
+msgid "This question can't be used because it's based on a different database."
+msgstr "This report can't be used because it's based on a different database."
+
+#: frontend/src/metabase/query_builder/components/template_tags/CardTagEditor.jsx:50
+msgid "Couldn't find a saved question with that ID number."
+msgstr "Couldn't find a saved report with that ID number."
+
+#: frontend/src/metabase/query_builder/components/template_tags/CardTagEditor.jsx:61
+msgid "Pick a question or a model"
+msgstr "Pick a report or a model"
+
+#: frontend/src/metabase/query_builder/components/template_tags/CardTagEditor.jsx:63
+msgid "Pick a different question or a model"
+msgstr "Pick a different report or a model"
+
+#: frontend/src/metabase/query_builder/components/template_tags/CardTagEditor.jsx:85
+msgid "Question #…"
+msgstr "Report #…"
+
+#: frontend/src/metabase/query_builder/components/template_tags/CardTagEditor.jsx:88
+msgid "Question #{0}"
+msgstr "Report #{0}"
+
+#: frontend/src/metabase/reference/components/UsefulQuestions.jsx:13
+msgid "Potentially useful questions"
+msgstr "Potentially useful reports"
+
+#: frontend/src/metabase/reference/metrics/MetricList.jsx:25
+msgid "Defining common metrics for your team makes it even easier to ask questions"
+msgstr "Defining common metrics for your team makes it even easier to create reports"
+
+#: frontend/src/metabase/reference/databases/TableSidebar.jsx:45
+msgid "Questions about this table"
+msgstr "Reports about this table"
+
+#: frontend/src/metabase/reference/metrics/MetricQuestions.jsx:34
+msgid "Questions about this metric will appear here as they're added"
+msgstr "Reports about this metric will appear here as they're added"
+
+#: frontend/src/metabase/reference/databases/TableQuestions.jsx:35
+#: frontend/src/metabase/reference/metrics/MetricQuestions.jsx:36
+#: frontend/src/metabase/reference/segments/SegmentQuestions.jsx:36
+msgid "Ask a question"
+msgstr "Create a Report"
+
+#: frontend/src/metabase/reference/databases/TableQuestions.jsx:70
+#: frontend/src/metabase/reference/metrics/MetricQuestions.jsx:74
+#: frontend/src/metabase/reference/metrics/MetricSidebar.jsx:36
+#: frontend/src/metabase/reference/segments/SegmentQuestions.jsx:73
+#, javascript-format
+msgid "Questions about {0}"
+msgstr "Reports about {0}"
+
+#: frontend/src/metabase/reference/databases/TableQuestions.jsx:33
+msgid "Questions about this table will appear here as they're added"
+msgstr "Reports about this table will appear here as they're added"
+
+#: frontend/src/metabase/reference/segments/SegmentList.jsx:24
+msgid "Defining common segments for your team makes it even easier to ask questions"
+msgstr "Defining common segments for your team makes it even easier to create reports"
+
+#: frontend/src/metabase/search/components/InfoText.jsx:33
+#, javascript-format
+msgid "Saved question in {0}"
+msgstr "Saved report in {0}"
+
+#: frontend/src/metabase/reference/segments/SegmentSidebar.jsx:42
+msgid "Questions about this segment"
+msgstr "Reports about this segment"
+
+#: frontend/src/metabase/reference/segments/SegmentQuestions.jsx:34
+msgid "Questions about this segment will appear here as they're added"
+msgstr "Reports about this segment will appear here as they're added"
+
+#: frontend/src/metabase/sharing/components/EmailAttachmentPicker.jsx:211
+msgid "Questions to attach"
+msgstr "Reports to attach"
+
+#: enterprise/frontend/src/metabase-enterprise/audit_app/containers/AuditAlertTable/AuditAlertTable.jsx:9
+msgid "Filter by question name"
+msgstr "Filter by report name"
+
+#: enterprise/frontend/src/metabase-enterprise/audit_app/containers/QuestionsAuditTable.jsx:22
+msgid "Question name"
+msgstr "Report name"
+
+#: enterprise/frontend/src/metabase-enterprise/moderation/components/QuestionModerationSection/QuestionModerationSection.jsx:85
+msgid "Verify this question"
+msgstr "Verify this report"
+
+#: frontend/src/metabase/admin/databases/components/widgets/CacheFieldValuesScheduleWidget.jsx:55
+msgid "When a user adds a new filter to a dashboard or a SQL question, Metabase will\nscan the field(s) mapped to that filter in order to show the list of selectable values."
+msgstr "When a user adds a new filter to a dashboard or a SQL report, Insights will\nscan the field(s) mapped to that filter in order to show the list of selectable values."
+
+#: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:66
+msgid "All saved questions, metrics, and segments that rely on this database will be lost."
+msgstr "All saved reports, metrics, and segments that rely on this database will be lost."
+
+#: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:38
+#, javascript-format
+msgid "Saved questions and other things that depend on this {0} will continue to work, but this {1} will no longer be selectable from the query builder."
+msgstr "Saved reports and other things that depend on this {0} will continue to work, but this {1} will no longer be selectable from the query builder."
+
+#: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:82
+msgid "Metabase can scan the values in this table to enable checkbox filters in dashboards and questions."
+msgstr "Insights can scan the values in this table to enable checkbox filters in dashboards and reports."
+
+#: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:357
+msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "Metabase can scan the values for this field to enable checkbox filters in dashboards and reports."
+
+#: frontend/src/metabase/admin/permissions/components/DataPermissionsHelp/DataPermissionsHelp.jsx:24
+msgid "Unless a user group's access for a given database is set to “block\", they’ll be able to view any saved question based on that data if they have access to the collection it’s saved in."
+msgstr "Unless a user group's access for a given database is set to “block\", they’ll be able to view any saved report based on that data if they have access to the collection it’s saved in."
+
+#: frontend/src/metabase/admin/permissions/components/DataPermissionsHelp/DataPermissionsHelp.jsx:31
+msgid "Users can use the visual query builder to ask questions based on all tables in this database. A user group must have Unrestricted access for a database if you want to give them access to the SQL/native query editor."
+msgstr "Users can use the visual query builder to create reports based on all tables in this database. A user group must have Unrestricted access for a database if you want to give them access to the SQL/native query editor."
+
+#: frontend/src/metabase/admin/permissions/components/DataPermissionsHelp/DataPermissionsHelp.jsx:43
+msgid "Prevent users from creating new ad hoc queries or questions based on this data, or from seeing this data in the Browse Data screen. Users with this level of access can still see saved questions and charts based on this data in Collections they have access to."
+msgstr "Prevent users from creating new ad hoc queries or Reports based on this data, or from seeing this data in the Browse Data screen. Users with this level of access can still see saved Reports and charts based on this data in Collections they have access to."
+
+#: frontend/src/metabase/dashboard/components/AddSeriesModal/QuestionList.jsx:133
+msgid "Search for a question"
+msgstr "Search for a report"
+
+#: frontend/src/metabase/dashboard/components/Dashboard/DashboardEmptyState/DashboardEmptyState.jsx:19
+msgid "Add a question to start making it useful!"
+msgstr "Add a report to start making it useful!"
+
+#: frontend/src/metabase/dashboard/components/AddSeriesModal/QuestionListItem.jsx:38
+msgid "We're not sure if this question is compatible"
+msgstr "We're not sure if this report is compatible"
+
+#: frontend/src/metabase/query_builder/components/dataref/MetricPane.jsx:62
+#: frontend/src/metabase/query_builder/components/dataref/SegmentPane.jsx:88
+msgid "Could not find the table metadata prior to creating a new question"
+msgstr "Could not find the table metadata prior to creating a new report"
+
+#: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp.jsx:252
+#, javascript-format
+msgid "{0} creates a variable in this query template called \"variable_name\". Variables can be given types in the side panel, which changes their behavior. All variable types other than \"Field Filter\" will automatically cause a filter widget to be placed on this question; with Field Filters, this is optional. When this filter widget is filled in, that value replaces the variable in the query template."
+msgstr "{0} creates a variable in this query template called \"variable_name\". Variables can be given types in the side panel, which changes their behavior. All variable types other than \"Field Filter\" will automatically cause a filter widget to be placed on this report; with Field Filters, this is optional. When this filter widget is filled in, that value replaces the variable in the query template."
+
+#: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp.jsx:263
+msgid "Giving a variable the \"Field Filter\" type allows you to link questions to dashboard filter widgets or use more types of filter widgets on your SQL question. A Field Filter variable inserts SQL similar to that generated by the GUI query builder when adding filters on existing columns."
+msgstr "Giving a variable the \"Field Filter\" type allows you to link reports to dashboard filter widgets or use more types of filter widgets on your SQL question. A Field Filter variable inserts SQL similar to that generated by the GUI query builder when adding filters on existing columns."
+
+#: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp.jsx:266
+msgid "When adding a Field Filter variable, you'll need to map it to a specific field. You can then choose to display a filter widget on your question, but even if you don't, you can now map your Field Filter variable to a dashboard filter when adding this question to a dashboard. Field Filters should be used inside of a \"WHERE\" clause."
+msgstr "When adding a Field Filter variable, you'll need to map it to a specific field. You can then choose to display a filter widget on your question, but even if you don't, you can now map your Field Filter variable to a dashboard filter when adding this report to a dashboard. Field Filters should be used inside of a \"WHERE\" clause."
+
+#: frontend/src/metabase/query_builder/components/view/EditQuestionInfoModal.jsx:22
+msgid "Edit question"
+msgstr "Edit report"
+
+#: frontend/src/metabase/query_builder/components/view/NativeQueryButton.jsx:19
+msgid "Native query for this question"
+msgstr "Native query for this report"
+
+#: frontend/src/metabase/query_builder/components/view/NativeQueryButton.jsx:20
+msgid "Convert this question to a native query"
+msgstr "Convert this report to a native query"
+
+#: frontend/src/metabase/query_builder/components/view/NativeQueryButton.jsx:24
+msgid "SQL for this question"
+msgstr "SQL for this report"
+
+#: frontend/src/metabase/query_builder/components/view/NativeQueryButton.jsx:25
+msgid "Convert this question to SQL"
+msgstr "Convert this report to SQL"
+
+#: frontend/src/metabase/query_builder/components/view/QuestionDescription.jsx:61
+#: frontend/src/metabase/query_builder/components/view/ViewHeader.jsx:250
+msgid "New question"
+msgstr "New report"
+
+#: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:141
+msgid "No questions have been publicly shared yet."
+msgstr "No reports have been publicly shared yet."
+
+#: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:162
+msgid "No questions have been embedded yet."
+msgstr "No reports have been embedded yet."
+
+#: frontend/src/metabase/query_builder/components/view/sidebars/DatasetManagementSection/DatasetManagementSection.jsx:72
+msgid "Turn back into a saved question"
+msgstr "Turn back into a saved report"
+
+#: enterprise/backend/src/metabase_enterprise/sandbox/models/group_table_access_policy.clj
+msgid "Sandbox Questions can''t return columns that have different types than the Table they are sandboxing."
+msgstr "Sandbox Reports can''t return columns that have different types than the Table they are sandboxing."
+
+#: src/metabase/api/card.clj target/classes/metabase/api/card.clj
+msgid "You cannot save this Question because you do not have permissions to run its query."
+msgstr "You cannot save this Report because you do not have permissions to run its query."
+
+#: src/metabase/api/setup.clj target/classes/metabase/api/setup.clj
+msgid "Organize questions"
+msgstr "Organize reports"
+
+#: src/metabase/api/setup.clj target/classes/metabase/api/setup.clj
+msgid "Have a lot of saved questions in {0}? Create collections to help manage them and add context."
+msgstr "Have a lot of saved reports in {0}? Create collections to help manage them and add context."
+
+#: src/metabase/api/setup.clj target/classes/metabase/api/setup.clj
+msgid "Keep everyone on the same page by creating canonical sets of filters anyone can use while asking questions."
+msgstr "Keep everyone on the same page by creating canonical sets of filters anyone can use while asking reports."
+
+#: src/metabase/automagic_dashboards/core.clj
+#: target/classes/metabase/automagic_dashboards/core.clj
+msgid "\"{0}\" question"
+msgstr "\"{0}\" report"
+
+#: src/metabase/db/data_migrations.clj
+#: target/classes/metabase/db/data_migrations.clj
+msgid "Error adding legacy SQL directive to BigQuery saved Question"
+msgstr "Error adding legacy SQL directive to BigQuery saved Report"
+
+#: src/metabase/db/data_migrations.clj
+#: target/classes/metabase/db/data_migrations.clj
+msgid "Migrated Questions"
+msgstr "Migrated Reports"
+
+#: src/metabase/driver/common/parameters/values.clj
+#: target/classes/metabase/driver/common/parameters/values.clj
+msgid "The sub-query from referenced question #{0} failed with the following error: {1}"
+msgstr "The sub-query from referenced report #{0} failed with the following error: {1}"
+
+#: src/metabase/models/card.clj target/classes/metabase/models/card.clj
+msgid "Cannot save Question: source query has circular references."
+msgstr "Cannot save Report: source query has circular references."
+
+#: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
+msgid "Enable admins to create publicly viewable links (and embeddable iframes) for Questions and Dashboards?"
+msgstr "Enable admins to create publicly viewable links (and embeddable iframes) for Reports and Dashboards?"
+
+#: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
+msgid "Allow admins to securely embed questions and dashboards within other applications?"
+msgstr "Allow admins to securely embed reports and dashboards within other applications?"
+
+#: src/metabase/public_settings.clj
+msgid "Allow using a saved question or Model as the source for other queries?"
+msgstr "Allow using a saved report or Model as the source for other queries?"
+
+#: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
+msgid "The maximum size of the cache, per saved question, in kilobytes:"
+msgstr "The maximum size of the cache, per saved report, in kilobytes:"
+
+#: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
+msgid "Metabase will cache all saved questions with an average query execution time longer than this many seconds:"
+msgstr "Insights will cache all saved reports with an average query execution time longer than this many seconds:"
+
+#: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
+msgid "To determine how long each saved question''s cached result should stick around, we take the query''s average execution time and multiply that by whatever you input here."
+msgstr "To determine how long each saved report''s cached result should stick around, we take the query''s average execution time and multiply that by whatever you input here."
+
+#: src/metabase/pulse/render/body.clj
+msgid "There was a problem with this question."
+msgstr "There was a problem with this report."
+
+#: src/metabase/pulse/render/body.clj
+#: target/classes/metabase/pulse/render/body.clj
+msgid "This question has been included as a file attachment"
+msgstr "This report has been included as a file attachment"
+
+#: src/metabase/query_processor/card.clj target/classes/metabase/api/card.clj
+msgid "Question''s average execution duration is {0}; using ''magic'' TTL of {1}"
+msgstr "Report''s average execution duration is {0}; using ''magic'' TTL of {1}"
+
+#: src/metabase/query_processor/middleware/resolve_referenced.clj
+#: target/classes/metabase/query_processor/middleware/resolve_referenced.clj
+msgid "Referenced question #{0} could not be found"
+msgstr "Referenced report #{0} could not be found"
+
+#: src/metabase/query_processor/middleware/resolve_referenced.clj
+#: target/classes/metabase/query_processor/middleware/resolve_referenced.clj
+msgid "These questions seem to be part of the problem: \"{0}\" and \"{1}\"."
+msgstr "These reports seem to be part of the problem: \"{0}\" and \"{1}\"."
+
+#: target/classes/metabase/api/setup.clj
+msgid "Does your team use Slack? If so, you can send automated updates via pulses and ask questions with MetaBot."
+msgstr "Does your team use Slack? If so, you can send automated updates via pulses and create reports with InsightsBot."
+
+#: target/classes/metabase/metabot.clj
+msgid "Enable MetaBot, which lets you search for and view your saved questions directly via Slack."
+msgstr "Enable InsightsBot, which lets you search for and view your saved reports directly via Slack."
+
+#: target/classes/metabase/public_settings.clj
+msgid "Allow using a saved question as the source for other queries?"
+msgstr "Allow using a saved report as the source for other queries?"
+
+#: resources/automagic_dashboards/question/GenericQuestion.yaml
+msgid "A closer look at the metrics and dimensions used in this saved question."
+msgstr "A closer look at the metrics and dimensions used in this saved report."
+
+#: frontend/src/metabase/lib/revisions/revisions.js:130
+msgid "added a card"
+msgid_plural "added {0} cards"
+msgstr[0] "added a report"
+msgstr[1] "added {0} reports"
+
+#: frontend/src/metabase/lib/revisions/revisions.js:144
+msgid "removed a card"
+msgid_plural "removed {0} cards"
+msgstr[0] "removed a report"
+msgstr[1] "removed {0} reports"
+
+#: frontend/src/metabase/dashboard/components/DashCardCardParameterMapper.jsx:108
+msgid ""
+"This card doesn't have any fields or parameters that can be mapped to this parameter type."
+msgstr ""This report doesn't have any fields or parameters that can be mapped to this parameter type."
+
+#: frontend/src/metabase/dashboard/components/DashCardParameterMapper.jsx:20
+msgid "Make sure to make a selection for each series, or the filter won't work on this card."
+msgstr "Make sure to make a selection for each series, or the filter won't work on this report."
+
+#: frontend/src/metabase/lib/revisions/revisions.js:138
+msgid "rearranged the cards"
+msgstr "rearranged the reports"
+
+#: frontend/src/metabase/parameters/components/ParameterValueWidget.jsx:156
+msgid "This filter needs to be connected to a card."
+msgstr "This filter needs to be connected to a report."
+
+#: frontend/src/metabase/visualizations/components/Visualization.jsx:38
+msgid "Sorry, you don't have permission to see this card."
+msgstr "Sorry, you don't have permission to see this report."
+
+#: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:138
+msgid "Public Card Listing"
+msgstr "Public Report Listing"
+
+#: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:161
+msgid "Embedded Card Listing"
+msgstr "Embedded Report Listing"
+
+#: enterprise/backend/src/metabase_enterprise/sandbox/models/group_table_access_policy.clj
+msgid "Cannot update Card: Card is used for Sandboxing, and updates would violate sandbox rules."
+msgstr "Cannot update Report: Report is used for Sandboxing, and updates would violate sandbox rules."
+
+#: enterprise/backend/src/metabase_enterprise/serialization/load.clj
+msgid "Could not find context for fully qualified card name {0}"
+msgstr "Could not find context for fully qualified report name {0}"
+
+#: enterprise/backend/test/metabase_enterprise/serialization/load_test.clj
+msgid "Failed to execute query for loaded card \"{0}\": {1}"
+msgstr "Failed to execute query for loaded report \"{0}\": {1}"
+
+#: src/metabase/api/card.clj target/classes/metabase/api/card.clj
+msgid "Card results metadata passed in to API is VALID. Thanks!"
+msgstr ""
+
+#: src/metabase/api/card.clj target/classes/metabase/api/card.clj
+msgid "Card results metadata passed in to API is MISSING. Running query to fetch correct metadata."
+msgstr "Report results metadata passed in to API is MISSING. Running query to fetch correct metadata."
+
+#: src/metabase/api/dashboard.clj
+msgid "Card {0} does not exist or does not have a valid query."
+msgstr "Report {0} does not exist or does not have a valid query."
+
+#: src/metabase/api/dataset.clj target/classes/metabase/api/dataset.clj
+msgid "Source query for this query is Card {0}"
+msgstr "Source query for this query is Report {0}"
+
+#: src/metabase/automagic_dashboards/populate.clj
+#: target/classes/metabase/automagic_dashboards/populate.clj
+msgid "Adding {0} cards to dashboard {1}:n{2}"
+msgstr "Adding {0} reports to dashboard {1}:n{2}"
+
+#: src/metabase/automagic_dashboards/rules.clj
+#: target/classes/metabase/automagic_dashboards/rules.clj
+msgid "Valid card dimension references"
+msgstr "Valid report dimension references"
+
+#: src/metabase/driver/common/parameters/values.clj
+#: target/classes/metabase/driver/common/parameters/values.clj
+msgid "Invalid :card parameter: missing `:card-id`"
+msgstr "Invalid :report parameter: missing `:card-id`"
+
+#: src/metabase/driver/common/parameters/values.clj
+#: target/classes/metabase/driver/common/parameters/values.clj
+#: target/classes/metabase/metabot/command.clj
+msgid "Card {0} not found."
+msgstr "Report {0} not found."
+
+#: src/metabase/models/card.clj src/metabase/models/query/permissions.clj
+#: src/metabase/query_processor/middleware/fetch_source_query.clj
+#: src/metabase/query_processor/middleware/permissions.clj
+#: target/classes/metabase/models/card.clj
+#: target/classes/metabase/models/query/permissions.clj
+#: target/classes/metabase/query_processor/middleware/fetch_source_query.clj
+#: target/classes/metabase/query_processor/middleware/permissions.clj
+msgid "Card {0} does not exist."
+msgstr "Report {0} does not exist."
+
+#: src/metabase/pulse.clj src/metabase/pulse/util.clj
+#: target/classes/metabase/pulse.clj
+msgid "Error running query for Card {0}"
+msgstr "Error running query for Report {0}"
+
+#: src/metabase/pulse/render/body.clj
+#: target/classes/metabase/pulse/render/body.clj
+msgid "Please view this card in Metabase."
+msgstr "Please view this report in Insights."
+
+#: src/metabase/query_processor/async.clj
+#: target/classes/metabase/query_processor/async.clj
+msgid "Error running query to determine Card result metadata:"
+msgstr "Error running query to determine Report result metadata:"
+
+#: src/metabase/query_processor/card.clj
+msgid "Invalid parameter: Card {0} does not have a template tag named {1}."
+msgstr "Invalid parameter: Report {0} does not have a template tag named {1}."
+
+#: src/metabase/query_processor/middleware/fetch_source_query.clj
+#: target/classes/metabase/query_processor/middleware/fetch_source_query.clj
+msgid "Trimming trailing comment from card with id {0}"
+msgstr "Trimming trailing comment from report with id {0}"
+
+#: src/metabase/query_processor/middleware/fetch_source_query.clj
+#: target/classes/metabase/query_processor/middleware/fetch_source_query.clj
+msgid "Missing source query in Report {0}"
+msgstr ""
+
+#: src/metabase/query_processor/middleware/fetch_source_query.clj
+#: target/classes/metabase/query_processor/middleware/fetch_source_query.clj
+msgid "Fetched source query from Card {0}:"
+msgstr "Fetched source query from Report {0}:"
+
+#: src/metabase/query_processor/middleware/permissions.clj
+#: target/classes/metabase/query_processor/middleware/permissions.clj
+msgid "You do not have permissions to view Card {0}."
+msgstr "You do not have permissions to view Report {0}."
+
+#: target/classes/metabase/api/card.clj
+msgid "Card results metadata passed in to API is INVALID. Running query to fetch correct metadata."
+msgstr "msgid "Repot results metadata passed in to API is INVALID. Running query to fetch correct metadata."
