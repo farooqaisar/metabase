@@ -7,10 +7,16 @@ import { deterministicAssign } from "./deterministic";
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS
 /* eslint-disable no-color-literals */
 const colors: Record<string, string> = {
-  brand: "#509EE3",
-  "brand-light": "#DDECFA",
-  accent1: "#88BF4D",
-  accent2: "#A989C5",
+  // start - ellucian - additional and updated colors
+  naviconhover: "#5B5E65",
+  navbackground: "#F8F8F8",
+  navborder: "#D9D9D9",
+  border: "#F0F0F0",
+  // end - ellucian - additional and updated colors
+  brand: "#026BC8",
+  "brand-light": "#ddecfa",
+  accent1: "#7172AD",
+  accent2: "#5B5E65",
   accent3: "#EF8C8C",
   accent4: "#F9D45C",
   accent5: "#F2A86F",
@@ -35,7 +41,6 @@ const colors: Record<string, string> = {
   "bg-yellow": "#FFFCF2",
   focus: "#CBE2F7",
   shadow: "rgba(0,0,0,0.08)",
-  border: "#EEECEC",
 
   /* Saturated colors for the SQL editor. Shouldn't be used elsewhere since they're not white-labelable. */
   "saturated-blue": "#2D86D4",
@@ -57,8 +62,12 @@ export const aliases: Record<string, string> = {
   database: "accent2",
   dashboard: "brand",
   pulse: "accent4",
-  nav: "bg-white",
   content: "bg-light",
+  // start - ellucian - additional and updated colors
+  nav: "brand",
+  navhover: "naviconhover",
+  navcolor: "navbackground",
+  // end - ellucian - additional and updated colors
 };
 export const harmony: string[] = [];
 // DEPRECATED: we should remove these and use `colors` directly

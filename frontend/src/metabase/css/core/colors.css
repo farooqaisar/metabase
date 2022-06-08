@@ -2,16 +2,23 @@
  * NOTE: KEEP SYNCRONIZED WITH COLORS.JS
  */
 :root {
-  --color-brand: #509ee3;
-  --color-brand-light: #ddecfa;
-  --color-accent1: #88bf4d;
-  --color-accent2: #a989c5;
+  /* start - ellucian - additional and updated colors */
+  --color-navborder: #d9d9d9;
+  --color-navbartext: #5b5e65;
+  --color-admin-navbar: #4244c7;
+  --color-naviconhover: #5b5e65;
+  --color-navbackground: #f8f8f8;
+  --color-border: #f0f0f0;
+  --color-brand: #026bc8;
+  --color-accent1: #7172ad;
+  --color-accent2: #5b5e65;
+  /* end - ellucian - additional and updated colors */
   --color-accent3: #ef8c8c;
   --color-accent4: #f9d45c;
   --color-accent5: #f2a86f;
   --color-accent6: #98d9d9;
   --color-accent7: #7172ad;
-  --color-admin-navbar: #7172ad;
+  --color-brand-light: #ddecfa;
   --color-white: #ffffff;
   --color-black: #2e353b;
   --color-success: #84bb4c;
@@ -30,7 +37,6 @@
   --color-bg-yellow: #fffcf2;
   --color-focus: #cbe2f7;
   --color-shadow: rgba(0, 0, 0, 0.13);
-  --color-border: #eeecec;
 
   /* Saturated colors for the SQL editor. Shouldn't be used elsewhere since they're not white-labelable. */
   --color-saturated-blue: #2d86d4;
@@ -280,6 +286,14 @@
 .text-white-hover:hover {
   color: var(--color-text-white);
 }
+
+/* start - ellucian - Navbar text color */
+.text-navbar,
+:local(.text-navbar),
+.text-navbar-hover:hover {
+  color: var(--color-navbartext);
+}
+/* end - ellucian - Navbar text color */
 
 @media screen and (--breakpoint-min-md) {
   .md-text-white {

@@ -15,6 +15,13 @@
   border-bottom: var(--border-size) var(--border-style) var(--color-border);
 }
 
+/* start - ellucian - navbar border color */
+.border-bottom-navbar,
+:local(.border-bottom) {
+  border-bottom: var(--border-size) var(--border-style) var(--color-navborder);
+}
+/* end - ellucian - navbar border color */
+
 /* ensure that a border-top item inside of a bordred element won't double up */
 .bordered > .border-bottom:last-child {
   border-bottom: none;
