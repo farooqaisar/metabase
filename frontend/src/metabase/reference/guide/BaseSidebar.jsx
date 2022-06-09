@@ -19,7 +19,8 @@ const BaseSidebar = ({ style, className }) => (
       />
     </div>
     <ol className="mx3">
-      <SidebarItem
+      {/* start - ellucian - excluded because it's admin only feature*/}
+      {/* <SidebarItem
         key="/reference/metrics"
         href="/reference/metrics"
         icon="ruler"
@@ -30,7 +31,8 @@ const BaseSidebar = ({ style, className }) => (
         href="/reference/segments"
         icon="segment"
         name={t`Segments`}
-      />
+      /> */}
+      {/* end - ellucian - excluded because it's admin only feature*/}
       <SidebarItem
         key="/reference/databases"
         href="/reference/databases"
