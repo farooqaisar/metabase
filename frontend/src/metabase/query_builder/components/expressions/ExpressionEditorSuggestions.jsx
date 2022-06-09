@@ -37,7 +37,7 @@ SuggestionSpan.propTypes = {
 function colorForIcon(icon) {
   switch (icon) {
     case "segment":
-      return { normal: color("taupe"), highlighted: color("brand-white") };
+      return { normal: color("accent2"), highlighted: color("brand-white") };
     case "insight":
       return { normal: color("accent1"), highlighted: color("brand-white") };
     case "function":

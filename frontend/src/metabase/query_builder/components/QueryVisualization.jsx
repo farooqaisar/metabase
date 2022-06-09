@@ -121,7 +121,7 @@ export const VisualizationRunningState = ({ className }) => (
   >
     <LoadingSpinner />
     <h2 className="Loading-message text-brand text-uppercase my3">
-      {t`Doing science`}...
+      {/* {t`Doing science`}... */}
     </h2>
   </div>
 );

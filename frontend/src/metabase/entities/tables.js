@@ -231,7 +231,7 @@ const Tables = createEntity({
     getIcon: (table, { variant = "primary" } = {}) => ({
       name: variant === "primary" ? "table" : "database",
     }),
-    getColor: table => color("taupe"),
+    getColor: table => color("accent2"),
   },
 
   selectors: {

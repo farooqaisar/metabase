@@ -83,7 +83,7 @@ const TableBrowserItem = ({ table, dbId, xraysEnabled }) => {
       item={table}
       name={table.display_name || table.name}
       iconName="table"
-      iconColor={color("taupe")}
+      iconColor={color("accent2")}
       loading={!isSyncCompleted(table)}
       disabled={!isSyncCompleted(table)}
       buttons={

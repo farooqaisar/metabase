@@ -257,8 +257,10 @@ class Settings {
     if (anchor) {
       anchor = `#${anchor}`;
     }
-
-    return `https://www.metabase.com/docs/${tag}/${page}${anchor}`;
+    // start - ellucian - replacing metabase document links on all pages to one ellucian resource page
+    // return `https://www.metabase.com/docs/${tag}/${page}${anchor}`;
+    return `https://resources.elluciancloud.com`;
+    // end - ellucian - replacing metabase document links on all pages to one ellucian resource page
   }
 
   storeUrl(path = "") {

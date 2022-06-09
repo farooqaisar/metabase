@@ -32,7 +32,12 @@ function DatabaseBrowser({ databases }) {
               hover={{ color: color("brand") }}
             >
               <Card p={3} hover={{ color: color("brand") }}>
-                <Icon name="database" color={color("taupe")} mb={3} size={28} />
+                <Icon
+                  name="database"
+                  color={color("accent2")}
+                  mb={3}
+                  size={28}
+                />
                 <h3 className="text-wrap">{database.name}</h3>
               </Card>
             </Link>
