@@ -6,7 +6,7 @@ import { push } from "react-router-redux";
 
 import { t } from "ttag";
 
-import { Grid } from "metabase/components/Grid";
+import { Grid, GridNewQuestion } from "metabase/components/Grid";
 
 import NewQueryOption from "metabase/new_query/components/NewQueryOption";
 import NoDatabasesEmptyState from "metabase/reference/databases/NoDatabasesEmptyState";
@@ -73,8 +73,10 @@ export default class NewQueryOptions extends Component {
 
     return (
       <QueryOptionsRoot>
-        <Grid className="justifyCenter">
-          {hasDataAccess && (
+        {/* start - ellucian - commented out Simple Question option and used custom GridNewQuestion component for formatting */}
+        <GridNewQuestion>
+        {/* <Grid className="justifyCenter"> 
+           {hasDataAccess && (
             <QueryOptionsGridItem itemsCount={itemsCount}>
               <NewQueryOption
                 image="app/img/simple_mode_illustration"
@@ -85,7 +87,7 @@ export default class NewQueryOptions extends Component {
                 data-metabase-event={`New Question; Simple Question Start`}
               />
             </QueryOptionsGridItem>
-          )}
+          )} */}
           {hasDataAccess && (
             <QueryOptionsGridItem itemsCount={itemsCount}>
               <NewQueryOption
@@ -115,8 +117,9 @@ export default class NewQueryOptions extends Component {
                 data-metabase-event={`New Question; Native Query Start`}
               />
             </QueryOptionsGridItem>
+            // end - ellucian - commented out Simple Question option and used custom GridNewQuestion component for formatting
           )}
-        </Grid>
+        </GridNewQuestion>
       </QueryOptionsRoot>
     );
   }

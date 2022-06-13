@@ -101,12 +101,11 @@ function App({
   });
 
   const isAdminApp = useMemo(() => pathname.startsWith("/admin/"), [pathname]);
-  // start - ellucian - changing return to true to enable Navbar show as embedded app
+
   const hasNavbar = useMemo(() => {
     if (!currentUser || isEditingDashboard) {
       return false;
     }
-    // end - ellucian - changing return to true to enable Navbar show as embedded app
     if (IFRAMED) {
       return EMBEDDED_ROUTES_WITH_NAVBAR.some(pattern =>
         pattern.test(pathname),
