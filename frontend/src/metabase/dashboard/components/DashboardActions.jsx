@@ -47,62 +47,63 @@ export const getDashboardActions = (
 
   const canShareDashboard = hasCards;
   const canCreateSubscription = hasDataCards && canManageSubscriptions;
+//  start - ellucian - hide Share and Subscription buttons from Dashboard screen
+  // if (!isEditing && !isEmpty && !isPublic) {
+  //   // Getting notifications with static text-only cards doesn't make a lot of sense
+  //   if (canCreateSubscription && !isFullscreen) {
+  //     buttons.push(
+  //       <Tooltip tooltip={t`Subscriptions`} key="dashboard-subscriptions">
+  //         <span>
+  //           <DashboardHeaderButton
+  //             disabled={!canManageSubscriptions}
+  //             onClick={onSharingClick}
+  //             data-metabase-event={"Dashboard;Subscriptions"}
+  //           >
+  //             <Icon size={18} name="subscription" />
+  //           </DashboardHeaderButton>
+  //         </span>
+  //       </Tooltip>,
+  //     );
+  //   }
 
-  if (!isEditing && !isEmpty && !isPublic) {
-    // Getting notifications with static text-only cards doesn't make a lot of sense
-    if (canCreateSubscription && !isFullscreen) {
-      buttons.push(
-        <Tooltip tooltip={t`Subscriptions`} key="dashboard-subscriptions">
-          <span>
-            <DashboardHeaderButton
-              disabled={!canManageSubscriptions}
-              onClick={onSharingClick}
-              data-metabase-event={"Dashboard;Subscriptions"}
-            >
-              <Icon size={18} name="subscription" />
-            </DashboardHeaderButton>
-          </span>
-        </Tooltip>,
-      );
-    }
-
-    if (canShareDashboard) {
-      buttons.push(
-        <DashboardSharingEmbeddingModal
-          key="dashboard-embed"
-          additionalClickActions={() => self.refs.popover.close()}
-          dashboard={dashboard}
-          enabled={
-            !isEditing &&
-            !isFullscreen &&
-            ((isPublicLinksEnabled && (isAdmin || dashboard.public_uuid)) ||
-              (isEmbeddingEnabled && isAdmin))
-          }
-          isLinkEnabled={canShareDashboard}
-          linkText={
-            <Tooltip
-              isLinkEnabled={canShareDashboard}
-              tooltip={
-                canShareDashboard
-                  ? t`Sharing`
-                  : t`Add data to share this dashboard`
-              }
-            >
-              <DashboardHeaderButton>
-                <Icon
-                  name="share"
-                  className={cx({
-                    "text-brand-hover": canShareDashboard,
-                    "text-light": !canShareDashboard,
-                  })}
-                />
-              </DashboardHeaderButton>
-            </Tooltip>
-          }
-        />,
-      );
-    }
-  }
+  //   if (canShareDashboard) {
+  //     buttons.push(
+  //       <DashboardSharingEmbeddingModal
+  //         key="dashboard-embed"
+  //         additionalClickActions={() => self.refs.popover.close()}
+  //         dashboard={dashboard}
+  //         enabled={
+  //           !isEditing &&
+  //           !isFullscreen &&
+  //           ((isPublicLinksEnabled && (isAdmin || dashboard.public_uuid)) ||
+  //             (isEmbeddingEnabled && isAdmin))
+  //         }
+  //         isLinkEnabled={canShareDashboard}
+  //         linkText={
+  //           <Tooltip
+  //             isLinkEnabled={canShareDashboard}
+  //             tooltip={
+  //               canShareDashboard
+  //                 ? t`Sharing`
+  //                 : t`Add data to share this dashboard`
+  //             }
+  //           >              
+  //             <DashboardHeaderButton>
+  //               <Icon
+  //                 name="share"
+  //                 className={cx({
+  //                   "text-brand-hover": canShareDashboard,
+  //                   "text-light": !canShareDashboard,
+  //                 })}
+  //               />
+  //             </DashboardHeaderButton>              
+  //           </Tooltip>
+  //         }
+  //       />,
+  //     );
+  //   }
+  // }
+//  end - ellucian - hide Share and Subscription buttons from Dashboard screen
 
   if (!isEditing && !isEmpty) {
     buttons.push(
@@ -116,25 +117,26 @@ export const getDashboardActions = (
       />,
     );
   }
-
-  if (!isEditing && isFullscreen) {
-    buttons.push(
-      <Tooltip
-        key="night"
-        tooltip={isNightMode ? t`Daytime mode` : t`Nighttime mode`}
-      >
-        <span data-metabase-event={"Dashboard;Night Mode;" + !isNightMode}>
-          <DashboardHeaderButton>
-            <NightModeIcon
-              className="text-brand-hover cursor-pointer"
-              isNightMode={isNightMode}
-              onClick={() => onNightModeChange(!isNightMode)}
-            />
-          </DashboardHeaderButton>
-        </span>
-      </Tooltip>,
-    );
-  }
+// start - ellucian - Hide night mode button from Dashboard screen
+  // if (!isEditing && isFullscreen) {
+  //   buttons.push(
+  //     <Tooltip
+  //       key="night"
+  //       tooltip={isNightMode ? t`Daytime mode` : t`Nighttime mode`}
+  //     >
+  //       <span data-metabase-event={"Dashboard;Night Mode;" + !isNightMode}>
+  //         <DashboardHeaderButton>
+  //           <NightModeIcon
+  //             className="text-brand-hover cursor-pointer"
+  //             isNightMode={isNightMode}
+  //             onClick={() => onNightModeChange(!isNightMode)}
+  //           />
+  //         </DashboardHeaderButton>
+  //       </span>
+  //     </Tooltip>,
+  //   );
+  // }
+// end - ellucian - Hide night mode button from Dashboard screen
 
   if (!isEditing && !isEmpty) {
     // option click to enter fullscreen without making the browser go fullscreen
