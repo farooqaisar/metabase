@@ -64,14 +64,21 @@ export const SidebarButtonContainer = styled.div`
 export interface LeftContainerProps {
   isSearchActive: boolean;
 }
-
+// start - ellucian - Line 74-81, code was added to hide logo icon and keep the side buttons on display all the time
 export const LeftContainer = styled.div<LeftContainerProps>`
   display: flex;
   height: 100%;
   flex-direction: row;
   align-items: center;
   width: 30%;
-
+  ${LogoLink} {
+    opacity: 0;
+    pointer-events: none;
+  }
+  ${SidebarButtonContainer} {
+    opacity: 1;
+  }
+}
   &:hover {
     ${LogoLink} {
       opacity: 0;
@@ -96,7 +103,7 @@ export const LeftContainer = styled.div<LeftContainerProps>`
     }
   }
 `;
-
+// end - ellucian - Line 74-81, code was added to hide logo icon and keep the side buttons on display all the time
 export const MiddleContainer = styled.div`
   display: none;
   justify-content: center;

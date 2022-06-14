@@ -45,43 +45,44 @@ function ProfileLink({ user, handleCloseNavbar, adminItems, handleLogout }) {
     );
 
     return [
-      {
-        title: t`Account settings`,
-        icon: null,
-        link: Urls.accountSettings(),
-        event: `Navbar;Profile Dropdown;Edit Profile`,
-        onClose: handleCloseNavbar,
-      },
+      // start - ellucian - Removing some features from Admin toolbar
+      // {
+      //   title: t`Account settings`,
+      //   icon: null,
+      //   link: Urls.accountSettings(),
+      //   event: `Navbar;Profile Dropdown;Edit Profile`,
+      //   onClose: handleCloseNavbar,
+      // },
       showAdminSettingsItem && {
         title: t`Admin settings`,
         icon: null,
         link: "/admin",
         event: `Navbar;Profile Dropdown;Enter Admin`,
       },
-      {
-        title: t`Activity`,
-        icon: null,
-        link: "/activity",
-        event: `Navbar;Profile Dropdown;Activity ${tag}`,
-        onClose: handleCloseNavbar,
-      },
-      {
-        title: t`Help`,
-        icon: null,
-        link:
-          isAdmin && MetabaseSettings.isPaidPlan()
-            ? `https://www.metabase.com/help-premium?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}&diag=${compactBugReportDetailsForUrl}`
-            : `https://www.metabase.com/help?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}`,
+      // {
+      //   title: t`Activity`,
+      //   icon: null,
+      //   link: "/activity",
+      //   event: `Navbar;Profile Dropdown;Activity ${tag}`,
+      //   onClose: handleCloseNavbar,
+      // },
+      // {
+      //   title: t`Help`,
+      //   icon: null,
+      //   link:
+      //     isAdmin && MetabaseSettings.isPaidPlan()
+      //       ? `https://www.metabase.com/help-premium?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}&diag=${compactBugReportDetailsForUrl}`
+      //       : `https://www.metabase.com/help?utm_source=in-product&utm_medium=menu&utm_campaign=help&instance_version=${tag}`,
 
-        externalLink: true,
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
-      {
-        title: t`About Metabase`,
-        icon: null,
-        action: () => openModal("about"),
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
+      //   externalLink: true,
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
+      // {
+      //   title: t`About Metabase`,
+      //   icon: null,
+      //   action: () => openModal("about"),
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
       {
         title: t`Sign out`,
         icon: null,

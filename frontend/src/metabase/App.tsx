@@ -123,7 +123,8 @@ function App({
       isEditingDashboard ||
       isFullscreen
     ) {
-      return false;
+      // start/end / - ellucian returning true all the time even for embedding from ( default: false )
+      return true;
     }
     return !PATHS_WITHOUT_NAVBAR.some(pattern => pattern.test(pathname));
   }, [currentUser, pathname, isEditingDashboard, isAdminApp, hash]);
