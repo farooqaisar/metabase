@@ -827,3 +827,60 @@ msgstr "You do not have permissions to view Report {0}."
 #: target/classes/metabase/api/card.clj
 msgid "Card results metadata passed in to API is INVALID. Running query to fetch correct metadata."
 msgstr "msgid "Repot results metadata passed in to API is INVALID. Running query to fetch correct metadata."
+
+#: src/metabase/task/persist_refresh.clj
+msgid "Error refreshing persisting model with card-id {0}"
+msgstr "Error refreshing persisting model with report-id {0}"
+
+#: src/metabase/task/persist_refresh.clj
+msgid "Error unpersisting model with card-id {0}"
+msgstr "Error unpersisting model with report-id {0}"
+
+#: src/metabase/query_processor/middleware/fetch_source_query.clj
+msgid "Substituting cached query for card {0} from {1}.{2}"
+msgstr "Substituting cached query for report {0} from {1}.{2}"
+
+#: src/metabase/task/persist_refresh.clj
+msgid "Unable to refresh model with card-id {0}"
+msgstr "Unable to refresh model with report-id {0}"
+
+#: src/metabase/task/persist_refresh.clj
+msgid "Unpersisting model with card-id {0}"
+msgstr "Unpersisting model with report-id {0}"
+
+#: frontend/src/metabase/dashboard/containers/DashboardApp.jsx:133
+msgid "All questions loaded"
+msgstr "All reports loaded"
+
+#: frontend/src/metabase/query_builder/containers/QueryBuilder.jsx:398
+msgid "All Set! Your question is ready."
+msgstr "All Set! Your report is ready."
+
+#: src/metabase/automagic_dashboards/core.clj
+msgid "Error decomposing question: {0}"
+msgstr "Error decomposing report: {0}"
+
+#: frontend/src/metabase/home/homepage/components/HomePopularSection/HomePopularSection.tsx:48
+msgid "Here are some popular questions"
+msgstr "Here are some popular reports"
+
+#: frontend/src/metabase/admin/settings/selectors.js:390 ( Modify)
+msgid "Saved questions"
+msgstr "Saved reports"
+
+#: frontend/src/metabase/query_builder/components/QueryValidationError/QueryValidationError.tsx:29
+msgid "Something's wrong with your question"
+msgstr "Something's wrong with your report"
+
+
+#: frontend/src/metabase/query_builder/components/view/View.jsx:524
+msgid "Would you like to be notified when this question is done loading?"
+msgstr "Would you like to be notified when this report is done loading?"
+
+#: frontend/src/metabase/query_builder/components/view/ViewHeader.jsx:426
+msgid "You don't have permission to save this question."
+msgstr "You don't have permission to save this report."
+
+#: frontend/src/metabase/query_builder/actions/querying.js:59
+msgid "Your question is ready!"
+msgstr "Your report is ready!"
