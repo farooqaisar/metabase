@@ -1,0 +1,18 @@
+FROM 434313288222.dkr.ecr.us-east-1.amazonaws.com/golden-images/ubuntu-node-16.x:latest
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN mkdir -p /app &&  mkdir -p /plugins
+COPY . /app
+RUN cd app \
+  && apt-get update &&  apt-get install -y software-properties-common apt-utils git \
+  && wget -O- https://apt.corretto.aws/corretto.key | apt-key add - \
+  && add-apt-repository 'deb https://apt.corretto.aws stable main' \
+  && apt-get install -y  java-17-amazon-corretto-jdk && java -version && update-alternatives --config java \
+  #&& apt-get install -y  leiningen netcat \
+  && curl -O https://download.clojure.org/install/linux-install-1.10.3.1075.sh && chmod +x linux-install-1.10.3.1075.sh &&  ./linux-install-1.10.3.1075.sh  \
+  && npm install --global yarn --reg https://artifactory.devops.ellucian.com/artifactory/api/npm/npmjs \
+  && export MB_EDITION=ee && export MB_VERSION=1.43.2 && ./bin/build
+
+EXPOSE 3000
+
+ENTRYPOINT ["/bin/sh","sleep 360"]
