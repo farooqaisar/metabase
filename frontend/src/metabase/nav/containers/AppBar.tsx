@@ -96,18 +96,26 @@ function AppBar({ isNavbarOpen, toggleNavbar, closeNavbar }: Props) {
       </LeftContainer>
       {!isSearchActive && (
         <MiddleContainer>
-          <HomepageLink handleClick={onLogoClick} />
+          {/* <HomepageLink handleClick={onLogoClick} /> */}
+          <SearchBarContainer>
+            <SearchBarContent>
+              <SearchBar
+                onSearchActive={onSearchActive}
+                onSearchInactive={onSearchInactive}
+              />
+            </SearchBarContent>
+          </SearchBarContainer>
         </MiddleContainer>
       )}
       <RightContainer>
-        <SearchBarContainer>
+        {/* <SearchBarContainer>
           <SearchBarContent>
             <SearchBar
               onSearchActive={onSearchActive}
               onSearchInactive={onSearchInactive}
             />
           </SearchBarContent>
-        </SearchBarContainer>
+        </SearchBarContainer> */}
         <NewButton />
       </RightContainer>
     </AppBarRoot>

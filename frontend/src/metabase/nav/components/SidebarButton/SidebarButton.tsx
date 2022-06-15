@@ -12,6 +12,8 @@ function SidebarButton({ isSidebarOpen, onClick }: SidebarButtonProps) {
     <SidebarButtonRoot onClick={onClick} data-testid="sidebar-toggle-button">
       <SidebarIcon
         size={28}
+        // ellucian - added open-close variable to change colors of open-close icons
+        isSidebarOpen={isSidebarOpen}
         name={isSidebarOpen ? "sidebar_open" : "sidebar_closed"}
       />
     </SidebarButtonRoot>

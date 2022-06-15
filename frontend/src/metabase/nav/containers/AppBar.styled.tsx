@@ -104,21 +104,17 @@ export const LeftContainer = styled.div<LeftContainerProps>`
   }
 `;
 // end - ellucian - Line 74-81, code was added to hide logo icon and keep the side buttons on display all the time
+// start - ellucian - changed display of container to 'flex' for the search bar and removed logolink
 export const MiddleContainer = styled.div`
-  display: none;
+  display: flex;
   justify-content: center;
   width: 80px;
 
   ${breakpointMaxSmall} {
     display: flex;
   }
-
-  ${LogoLink} {
-    position: relative;
-    padding-left: 8px;
-    margin-left: 0;
-  }
 `;
+// end - ellucian - changed display of container to 'flex' for the search bar and removed logolink
 
 export const RightContainer = styled.div`
   display: flex;

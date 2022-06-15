@@ -5,9 +5,16 @@ import Icon from "metabase/components/Icon";
 import { color } from "metabase/lib/colors";
 import { space } from "metabase/styled-components/theme";
 
-export const SidebarIcon = styled(Icon)`
-  color: ${color("brand")};
+// export const SidebarIcon = styled(Icon)`
+//   color: ${color("brand")};
+// `;
+
+// start - ellucian - SideBar Open-Close button color changes
+export const SidebarIcon = styled(Icon)<{ isSidebarOpen: boolean }>`
+  color: ${props =>
+    props.isSidebarOpen ? color("ell_cts_blue_600") : color("ell_neutral_500")};
 `;
+// end - ellucian - SideBar Open-Close button color changes
 
 export const SidebarButtonRoot = styled.button`
   margin-left: ${space(1)};
