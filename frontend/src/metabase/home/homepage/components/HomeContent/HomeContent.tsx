@@ -26,10 +26,11 @@ const HomeContent = (props: HomeContentProps): JSX.Element | null => {
   if (isRecentSection(props)) {
     return <HomeRecentSection />;
   }
-
-  if (isXraySection(props)) {
-    return <HomeXraySection />;
-  }
+  // start - ellucian - removing x-ray content display from the home page
+  // if (isXraySection(props)) {
+  //   return <HomeXraySection />;
+  // }
+  // end - ellucian - removing x-ray content display from the home page
 
   return null;
 };

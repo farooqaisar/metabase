@@ -19,22 +19,34 @@ const sceneStyles = css`
   background-position: bottom;
 `;
 
+// start - ellucian - Removed showscene from the layout ${props => props.showScene && sceneStyles}; and modified padding
+// ${breakpointMinMedium} {
+//   padding: 3rem 4rem;
+// }
+
+// ${breakpointMinLarge} {
+//   padding: 4rem 7rem 2rem;
+// }
+
+// ${breakpointMinExtraLarge} {
+//   padding: 10rem 15rem 4rem;
+// }
+// end - ellucian - Modified brakpoints
 export const LayoutRoot = styled.div<LayoutProps>`
   min-height: 100%;
   padding: 1rem;
   background-color: ${color("bg-light")};
-  ${props => props.showScene && sceneStyles};
 
   ${breakpointMinMedium} {
-    padding: 3rem 4rem;
+    padding: 0rem 4rem;
   }
 
   ${breakpointMinLarge} {
-    padding: 4rem 7rem 2rem;
+    padding: 0rem 7rem 2rem;
   }
 
   ${breakpointMinExtraLarge} {
-    padding: 10rem 15rem 4rem;
+    padding: 1rem 15rem 4rem;
   }
 `;
 

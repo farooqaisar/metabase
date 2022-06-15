@@ -9,8 +9,8 @@ export interface HomeLayoutProps {
 
 const HomeLayout = ({ showScene, children }: HomeLayoutProps): JSX.Element => {
   return (
-    <LayoutRoot showScene={showScene}>
-      <GreetingSection />
+    <LayoutRoot>
+      {/* <GreetingSection /> */}
       <LayoutBody>{children}</LayoutBody>
     </LayoutRoot>
   );

@@ -32,7 +32,9 @@ const HomeRecentSection = ({
             url={Urls.modelToUrl(item) ?? ""}
           />
         ))}
-        {hasHelpCard && <HomeHelpCard />}
+        {/* ellucian - set the hlep card display to all time as opposed to first two logins */}
+        {/* {hasHelpCard && <HomeHelpCard />} */}
+        {<HomeHelpCard />}
       </SectionBody>
     </div>
   );
