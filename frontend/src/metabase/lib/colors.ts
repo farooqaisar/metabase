@@ -7,30 +7,24 @@ import { deterministicAssign } from "./deterministic";
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS
 /* eslint-disable no-color-literals */
 const colors: Record<string, string> = {
-  // start - ellucian - additional and updated colors
-  naviconhover: "#5B5E65",
+  /* start - ellucian - change in color themes.. later will be updated by path design tokens */
+  brand: "#026BC8",
+  accent1: "#7172AD",
+  accent2: "#5B5E65",
+  "text-dark": "#151618",
+  "text-medium": "#5B5E65",
+  border: "#F0F0F0",
+  ell_neutral_500: "#5B5E65",
+  ell_cts_blue_600: "#026BC8",
   navbackground: "#F8F8F8",
   navborder: "#D9D9D9",
-  border: "#F0F0F0",
-  brand: "#509EE3",  
-  accent1: "#88BF4D",
-  accent2: "#A989C5",
+  /* end - ellucian - change in color themes.. later will be updated by path design tokens */
+  "brand-light": "#DDECFA",
   accent3: "#EF8C8C",
   accent4: "#F9D45C",
   accent5: "#F2A86F",
   accent6: "#98D9D9",
   accent7: "#7172AD",
-  ell_brand: "#026BC8",
-  ell_accent1: "#90C9FF",
-  ell_accent2: "#BBE29B",
-  ell_accent3: "#D389C6",
-  ell_accent4: "#F5DB75",
-  ell_accent5: "#E37575",
-  ell_accent6: "#FFB581",
-  ell_accent7: "#9191E2",
-  ell_taupe: "#5B5E65",
-  // end - ellucian - additional and updated colors
-  "brand-light": "#ddecfa",
   "admin-navbar": "#7172AD",
   white: "#FFFFFF",
   black: "#2E353B",
@@ -38,8 +32,8 @@ const colors: Record<string, string> = {
   danger: "#ED6E6E",
   error: "#ED6E6E",
   warning: "#F9CF48",
-  "text-dark": "#4C5773",
-  "text-medium": "#949AAB",
+  // "text-dark": "#4C5773",
+  // "text-medium": "#949AAB",
   "text-light": "#B8BBC3",
   "text-white": "#FFFFFF",
   "bg-black": "#2E353B",
@@ -50,6 +44,17 @@ const colors: Record<string, string> = {
   "bg-yellow": "#FFFCF2",
   focus: "#CBE2F7",
   shadow: "rgba(0,0,0,0.08)",
+  // start - ellucian - new charting color palette - 400 intensity
+  ell_iris: "#9191E2",
+  ell_fountain: "#90C9FF",
+  ell_meadow: "#6CD6BC",
+  ell_kiwi: "#BBE29B",
+  ell_saffron: "#F5DB75",
+  ell_tangerine: "#FFB581",
+  ell_purple: "#D389C6",
+  ell_red: "#E37575",
+  ell_taupe: "#A59D96",
+  // end - ellucian - new charting color palette
 
   /* Saturated colors for the SQL editor. Shouldn't be used elsewhere since they're not white-labelable. */
   "saturated-blue": "#2D86D4",
@@ -66,17 +71,16 @@ export type ColorString = string;
 
 export default colors;
 export const aliases: Record<string, string> = {
-  summarize: "accent7",
+  summarize: "accent1",
   filter: "accent7",
-  database: "taupe",
+  database: "accent2",
   dashboard: "brand",
   pulse: "accent4",
   content: "bg-light",
-  // start - ellucian - additional and updated colors
-  nav: "brand",
+  //ellucian - AppBar-NavBar colors
   navhover: "naviconhover",
   navcolor: "navbackground",
-  // end - ellucian - additional and updated colors
+  nav: "brand",
 };
 export const harmony: string[] = [];
 // DEPRECATED: we should remove these and use `colors` directly
@@ -95,14 +99,14 @@ export const HARMONY_GROUP_SIZE = 8; // match initialColors length below
 function syncHarmony() {
   const harmonizer = new Harmonizer();
   const initialColors = [
-    colors["ell_brand"],
-    colors["ell_accent1"],
-    colors["ell_accent2"],
-    colors["ell_accent3"],
-    colors["ell_accent4"],
-    colors["ell_accent5"],
-    colors["ell_accent6"],
-    colors["ell_accent7"],
+    colors["brand"],
+    colors["accent1"],
+    colors["accent2"],
+    colors["accent3"],
+    colors["accent4"],
+    colors["accent5"],
+    colors["accent6"],
+    colors["accent7"],
   ];
   harmony.splice(0, harmony.length);
   // round 0 includes brand and all accents
@@ -127,15 +131,15 @@ function syncHarmony() {
 // syncs deprecated color families for legacy code
 function syncDeprecatedColorFamilies() {
   // normal + saturated + desaturated
-  normal.blue = saturated.blue = desaturated.blue = colors["brand"];
-  normal.green = saturated.green = desaturated.green = colors["accent1"];
-  normal.purple = saturated.purple = desaturated.purple = colors["accent2"];
-  normal.red = saturated.red = desaturated.red = colors["accent3"];
-  normal.yellow = saturated.yellow = desaturated.yellow = colors["accent4"];
-  normal.orange = colors["accent5"];
-  normal.teal = colors["accent6"];
-  normal.indigo = colors["accent7"];
-  normal.gray = colors["text-dark"];
+  normal.blue = saturated.blue = desaturated.blue = colors["ell_iris"];
+  normal.green = saturated.green = desaturated.green = colors["ell_fountain"];
+  normal.purple = saturated.purple = desaturated.purple = colors["ell_meadow"];
+  normal.red = saturated.red = desaturated.red = colors["ell_kiwi"];
+  normal.yellow = saturated.yellow = desaturated.yellow = colors["ell_saffron"];
+  normal.orange = colors["ell_tangerine"];
+  normal.teal = colors["ell_purple"];
+  normal.indigo = colors["ell_red"];
+  normal.gray = colors["ell_taupe"];
   normal.grey1 = colors["text-light"];
   normal.grey2 = colors["text-medium"];
   normal.grey3 = colors["text-dark"];

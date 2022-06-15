@@ -2,32 +2,35 @@
  * NOTE: KEEP SYNCRONIZED WITH COLORS.JS
  */
 :root {
-  /* start - ellucian - additional and updated colors */
-  --color-navborder: #d9d9d9;
-  --color-navbartext: #5b5e65;
-  --color-admin-navbar: #4244c7;
-  --color-naviconhover: #5b5e65;
-  --color-navbackground: #f8f8f8;
-  --color-border: #f0f0f0;
+  /* start - ellucian - change in color themes.. later will be updated by path design tokens */
   --color-brand: #026bc8;
-  --color-accent1: #90c9ff;
-  --color-accent2: #bbe29b;
-  --color-accent3: #d389c6;
-  --color-accent4: #f5db75;
-  --color-accent5: #e37575;
-  --color-accent6: #ffb581;
-  --color-accent7: #9191e2;
-  --color-dbicons: #5b5e65;
-  /* end - ellucian - additional and updated colors */
+  --color-accent1: #7172ad;
+  --color-accent2: #5b5e65;
+  --color-text-dark: #151618;
+  --color-text-medium: #5b5e65;
+  --color-border: #f0f0f0;
+  --color-admin-navbar: #4244c7;
+  --color-ell-neutral-500: #5b5e65;
+  --color-ell-cts-blue-600: #026bc8;
+  --color-navbackground: #f8f8f8;
+  --color-navborder: #d9d9d9;
+  /* --color-navbartext: #5B5E65;  */
+  /* end - ellucian - change in color themes.. later will be updated by path design tokens */
   --color-brand-light: #ddecfa;
+  --color-accent3: #ef8c8c;
+  --color-accent4: #f9d45c;
+  --color-accent5: #f2a86f;
+  --color-accent6: #98d9d9;
+  --color-accent7: #7172ad;
+  --color-admin-navbar: #7172ad;
   --color-white: #ffffff;
   --color-black: #2e353b;
   --color-success: #84bb4c;
   --color-error: #ed6e6e;
   --color-error-background: #ed6e6e55;
   --color-warning: #f9cf48;
-  --color-text-dark: #4c5773;
-  --color-text-medium: #949aab;
+  /* --color-text-dark: #4c5773;
+  --color-text-medium: #949aab; */
   --color-text-light: #b8bbc3;
   --color-text-white: #ffffff;
   --color-bg-black: #2e353b;
@@ -38,6 +41,18 @@
   --color-bg-yellow: #fffcf2;
   --color-focus: #cbe2f7;
   --color-shadow: rgba(0, 0, 0, 0.13);
+
+  /* start - ellucian - new charting color palette 400 intensity */
+  --color-ell_iris: #9191e2;
+  --color-ell_fountain: #90c9ff;
+  --color-ell_meadow: #6cd6bc;
+  --color-ell_kiwi: #bbe29b;
+  --color-ell_saffron: #f5db75;
+  --color-ell_tangerine: #ffb581;
+  --color-ell_purple: #d389c6;
+  --color-ell_red: #e37575;
+  --color-ell_taupe: #a59d96;
+  /* end - ellucian - new charting color palette */
 
   /* Saturated colors for the SQL editor. Shouldn't be used elsewhere since they're not white-labelable. */
   --color-saturated-blue: #2d86d4;
@@ -281,20 +296,20 @@
   background-color: var(--color-bg-black);
 }
 
+/* start - ellucian - AppBar-NavBar text color */
+.text-navbar,
+:local(.text-navbar),
+.text-navbar-hover:hover {
+  color: var(--color-ell-neutral-500);
+}
+/* end - ellucian - AppBar-NavBar text color */
+
 /* white  - move to bottom for specificity since its often used on hovers, etc */
 .text-white,
 :local(.text-white),
 .text-white-hover:hover {
   color: var(--color-text-white);
 }
-
-/* start - ellucian - Navbar text color */
-.text-navbar,
-:local(.text-navbar),
-.text-navbar-hover:hover {
-  color: var(--color-navbartext);
-}
-/* end - ellucian - Navbar text color */
 
 @media screen and (--breakpoint-min-md) {
   .md-text-white {
