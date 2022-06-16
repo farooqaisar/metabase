@@ -3,9 +3,9 @@
  */
 :root {
   /* start - ellucian - change in color themes.. later will be updated by path design tokens */
-  --color-brand: #026bc8;
-  --color-accent1: #7172ad;
-  --color-accent2: #5b5e65;
+  --color-brand: #509EE3;
+  --color-accent1: #88BF4D;
+  --color-accent2: #A989C5;
   --color-text-dark: #151618;
   --color-text-medium: #5b5e65;
   --color-border: #f0f0f0;

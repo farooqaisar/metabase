@@ -8,9 +8,9 @@ import { deterministicAssign } from "./deterministic";
 /* eslint-disable no-color-literals */
 const colors: Record<string, string> = {
   /* start - ellucian - change in color themes.. later will be updated by path design tokens */
-  brand: "#026BC8",
-  accent1: "#7172AD",
-  accent2: "#5B5E65",
+  brand: "#509EE3",
+  accent1: "#88BF4D",
+  accent2: "#A989C5",
   "text-dark": "#151618",
   "text-medium": "#5B5E65",
   border: "#F0F0F0",
