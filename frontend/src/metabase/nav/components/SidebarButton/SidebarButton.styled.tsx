@@ -12,7 +12,9 @@ import { space } from "metabase/styled-components/theme";
 // start - ellucian - SideBar Open-Close button color changes
 export const SidebarIcon = styled(Icon)<{ isSidebarOpen: boolean }>`
   color: ${props =>
-    props.isSidebarOpen ? color("ell_cts_blue_600") : color("ell_neutral_500")};
+    props.isSidebarOpen
+      ? color("colorCtaBlueBase")
+      : color("colorBrandNeutral500")};
 `;
 // end - ellucian - SideBar Open-Close button color changes
 

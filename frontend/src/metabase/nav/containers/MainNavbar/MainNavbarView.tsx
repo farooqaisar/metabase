@@ -4,7 +4,8 @@ import { t } from "ttag";
 import { BookmarksType, Collection, User } from "metabase-types/api";
 
 import Link from "metabase/core/components/Link";
-import { IconProps } from "metabase/components/Icon";
+import Icon, { IconProps } from "metabase/components/Icon";
+import Icon_Insights from "metabase/components/Icon_ellucian";
 import { Tree } from "metabase/components/tree";
 import TippyPopoverWithTrigger from "metabase/components/PopoverWithTrigger/TippyPopoverWithTrigger";
 
@@ -20,6 +21,7 @@ import * as Urls from "metabase/lib/urls";
 import { SelectedItem } from "./types";
 import BookmarkList from "./BookmarkList";
 import { SidebarCollectionLink, SidebarLink } from "./SidebarItems";
+import { HelpIcon } from "metabase/home/homepage/components/HomeHelpCard/HomeHelpCard.styled";
 import {
   AddYourOwnDataLink,
   BrowseLink,
@@ -165,15 +167,23 @@ function MainNavbarView({
           )}
         </ul>
       </div>
-      {!IFRAMED && (
-        <ProfileLinkContainer isOpen={isOpen}>
+      {/* start - ellucian - Documentation and Help Link and movement of IFRAME tag for bottom navbar*/}
+      {/* {!IFRAMED && ( */}
+      <ProfileLinkContainer isOpen={isOpen}>
+        {!IFRAMED && (
           <ProfileLink
             user={currentUser}
             handleCloseNavbar={onItemSelect}
             handleLogout={handleLogout}
           />
-        </ProfileLinkContainer>
-      )}
+        )}
+        <HelpIcon href="https://resources.elluciancloud.com/bundle/ellucian_insights_lrn_getstarted/page/c_about_insights.html">
+          {/* <Icon name="help" size={24}/> */}
+          <Icon name="help_filled" size={24} />
+        </HelpIcon>
+      </ProfileLinkContainer>
+      {/* )}       */}
+      {/* start - ellucian - Documentation and Help Link and movement of IFRAME tag for bottom navbar*/}
     </SidebarContentRoot>
   );
 }

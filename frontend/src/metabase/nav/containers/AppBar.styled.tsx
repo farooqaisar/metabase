@@ -11,6 +11,7 @@ import {
 
 import { APP_BAR_HEIGHT } from "../constants";
 
+// ellucian - modified border-bottom color to use ellucian neutral 300
 export const AppBarRoot = styled.header`
   position: relative;
   display: flex;
@@ -19,7 +20,7 @@ export const AppBarRoot = styled.header`
   width: 100%;
   height: ${APP_BAR_HEIGHT};
   background-color: ${color("bg-white")};
-  border-bottom: 1px solid ${color("border")};
+  border-bottom: 1px solid ${color("colorBrandNeutral300")};
   z-index: 4;
 
   @media print {

@@ -16,7 +16,7 @@ const activeInputCSS = css`
   border-radius: 6px;
   justify-content: flex-start;
 `;
-
+// ellucian - updated hover color from 'bg-medium' to colorBackgroundDefault and colorBrandNeutral100
 export const SearchInputContainer = styled.div<{ isActive: boolean }>`
   display: flex;
   flex: 1 1 auto;
@@ -24,7 +24,9 @@ export const SearchInputContainer = styled.div<{ isActive: boolean }>`
   position: relative;
 
   background-color: ${props =>
-    props.isActive ? color("bg-medium") : color("bg-light")};
+    props.isActive
+      ? color("colorBrandNeutral100")
+      : color("colorBrandNeutral200")};
   border: 1px solid ${color("border")};
 
   overflow: hidden;
@@ -32,7 +34,7 @@ export const SearchInputContainer = styled.div<{ isActive: boolean }>`
   transition: background 150ms, width 0.2s;
 
   &:hover {
-    background-color: ${color("bg-medium")};
+    background-color: ${color("colorBrandNeutral100")};
   }
 
   @media (prefers-reduced-motion) {
@@ -60,7 +62,7 @@ export const SearchInputContainer = styled.div<{ isActive: boolean }>`
     ${activeInputCSS};
   }
 `;
-
+// ellucian - changed "text-dark" to
 export const SearchInput = styled.input<{ isActive: boolean }>`
   background-color: transparent;
   border: none;
@@ -74,7 +76,7 @@ export const SearchInput = styled.input<{ isActive: boolean }>`
   }
 
   &::placeholder {
-    color: ${color("text-dark")};
+    color: ${color("text-medium")};
   }
 
   ${breakpointMinSmall} {
@@ -98,6 +100,7 @@ export const SearchInput = styled.input<{ isActive: boolean }>`
 const ICON_MARGIN = "10px";
 
 export const SearchIcon = styled(Icon)<{ isActive: boolean }>`
+  color: ${color("text-medium")};
   ${breakpointMaxSmall} {
     transition: margin 0.3s;
 

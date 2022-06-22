@@ -30,3 +30,11 @@ export const CardTitle = styled.div`
   font-weight: bold;
   margin-left: 1rem;
 `;
+
+// start - ellucian - Documentation and Help Icon in Sidebar and MainNavbar
+export const HelpIcon = styled(ExternalLink)`
+  flex: 0 0 auto;
+`;
+//   color: ${color("text-medium")};
+// `;
+// end - ellucian - Documentation and Help Icon in Sidebar and MainNavbar

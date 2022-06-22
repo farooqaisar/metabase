@@ -3,23 +3,46 @@ import Color from "color";
 import { Harmonizer } from "color-harmony";
 import { deterministicAssign } from "./deterministic";
 
+// import { withStyles } from '@ellucian/react-design-system/core/styles';
+import {
+  colorBrandPrimary,
+  colorBrandSecondary,
+  colorBrandNeutral600,
+  colorBrandNeutral500,
+  colorBrandNeutral300,
+  colorBrandNeutral200,
+  colorBrandNeutral100,
+  colorCtaTaupeBase,
+  colorCtaBlueBase,
+  colorBrandCtaActive,
+  colorBackgroundDefault,
+  colorBackgroundDivider,
+  colorBackgroundHeaderBarItemHover,
+  fountain400,
+  iris400,
+  kiwi400,
+  meadow400,
+  purple400,
+  saffron400,
+  tangerine400,
+} from "@ellucian/react-design-system/core/styles/tokens";
+
 // NOTE: DO NOT ADD COLORS WITHOUT EXTREMELY GOOD REASON AND DESIGN REVIEW
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS
 /* eslint-disable no-color-literals */
 const colors: Record<string, string> = {
   /* start - ellucian - change in color themes.. later will be updated by path design tokens */
+  colorBackgroundDefault,
+  colorBrandNeutral500,
+  colorBrandNeutral100,
+  colorBrandNeutral200,
+  colorBrandNeutral300,
+  colorCtaBlueBase,
+  /* end - ellucian - change in color themes.. later will be updated by path design tokens */
   brand: "#509EE3",
+  "brand-light": "#DDECFA",
   accent1: "#88BF4D",
   accent2: "#A989C5",
-  "text-dark": "#151618",
-  "text-medium": "#5B5E65",
-  border: "#F0F0F0",
-  ell_neutral_500: "#5B5E65",
-  ell_cts_blue_600: "#026BC8",
-  navbackground: "#F8F8F8",
-  navborder: "#D9D9D9",
-  /* end - ellucian - change in color themes.. later will be updated by path design tokens */
-  "brand-light": "#DDECFA",
   accent3: "#EF8C8C",
   accent4: "#F9D45C",
   accent5: "#F2A86F",
@@ -32,8 +55,8 @@ const colors: Record<string, string> = {
   danger: "#ED6E6E",
   error: "#ED6E6E",
   warning: "#F9CF48",
-  // "text-dark": "#4C5773",
-  // "text-medium": "#949AAB",
+  "text-dark": "#4C5773",
+  "text-medium": "#949AAB",
   "text-light": "#B8BBC3",
   "text-white": "#FFFFFF",
   "bg-black": "#2E353B",
@@ -44,14 +67,8 @@ const colors: Record<string, string> = {
   "bg-yellow": "#FFFCF2",
   focus: "#CBE2F7",
   shadow: "rgba(0,0,0,0.08)",
+  border: "#EEECEC",
   // start - ellucian - new charting color palette - 400 intensity
-  ell_iris: "#9191E2",
-  ell_fountain: "#90C9FF",
-  ell_meadow: "#6CD6BC",
-  ell_kiwi: "#BBE29B",
-  ell_saffron: "#F5DB75",
-  ell_tangerine: "#FFB581",
-  ell_purple: "#D389C6",
   ell_red: "#E37575",
   ell_taupe: "#A59D96",
   // end - ellucian - new charting color palette
@@ -131,13 +148,13 @@ function syncHarmony() {
 // syncs deprecated color families for legacy code
 function syncDeprecatedColorFamilies() {
   // normal + saturated + desaturated
-  normal.blue = saturated.blue = desaturated.blue = colors["ell_iris"];
-  normal.green = saturated.green = desaturated.green = colors["ell_fountain"];
-  normal.purple = saturated.purple = desaturated.purple = colors["ell_meadow"];
-  normal.red = saturated.red = desaturated.red = colors["ell_kiwi"];
-  normal.yellow = saturated.yellow = desaturated.yellow = colors["ell_saffron"];
-  normal.orange = colors["ell_tangerine"];
-  normal.teal = colors["ell_purple"];
+  normal.blue = saturated.blue = desaturated.blue = iris400;
+  normal.green = saturated.green = desaturated.green = fountain400;
+  normal.purple = saturated.purple = desaturated.purple = meadow400;
+  normal.red = saturated.red = desaturated.red = kiwi400;
+  normal.yellow = saturated.yellow = desaturated.yellow = saffron400;
+  normal.orange = tangerine400;
+  normal.teal = purple400;
   normal.indigo = colors["ell_red"];
   normal.gray = colors["ell_taupe"];
   normal.grey1 = colors["text-light"];
