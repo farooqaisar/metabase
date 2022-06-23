@@ -98,9 +98,9 @@ export const SidebarHeadingWrapper = styled.div`
   align-items: center;
   margin-bottom: ${space(1)};
 `;
-
+// ellucian - changed text-medium to text-dark
 export const SidebarHeading = styled.h4`
-  color: ${color("text-medium")};
+  color: ${color("text-dark")};
   font-weight: 700;
   font-size: 11px;
   text-transform: uppercase;
@@ -115,7 +115,7 @@ export const CollectionsMoreIconContainer = styled.button`
 `;
 
 export const CollectionsMoreIcon = styled(Icon)`
-  color: ${color("text-medium")};
+  color: ${color("text-dark")};
 `;
 
 export const CollectionMenuList = styled.ul`
@@ -132,7 +132,7 @@ export const LoadingTitle = styled.h2`
   font-weight: 400;
   margin-top: ${space(1)};
 `;
-
+// ellucian - setting up neutral 500 color of settings and help icons.
 export const ProfileLinkContainer = styled.div<{ isOpen: boolean }>`
   position: fixed;
   bottom: 0;
@@ -149,7 +149,7 @@ export const ProfileLinkContainer = styled.div<{ isOpen: boolean }>`
   overflow: hidden;
   align-items: center;
   margin-right: ${space(2)};
-  color: ${color("text-light")};
+  color: ${color("brand")};
 `;
 
 export const HomePageLink = styled(SidebarLink)`

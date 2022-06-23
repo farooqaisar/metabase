@@ -18,7 +18,7 @@ export const SidebarIcon = styled(Icon)<{
   ${props =>
     !props.color &&
     css`
-      color: ${props.isSelected ? color("brand") : color("brand-light")};
+      color: ${props.isSelected ? color("brand") : color("brand")};
     `}
 `;
 
@@ -34,9 +34,9 @@ export const ExpandToggleButton = styled(TreeNode.ExpandToggleButton)`
 const activeColorCSS = css`
   color: ${color("brand")};
 `;
-
+// ellucian - setting up neutral 500 and 600 colors
 function getTextColor(isSelected: boolean) {
-  return isSelected ? color("brand") : darken(color("text-medium"), 0.25);
+  return isSelected ? color("text-dark") : color("text-dark");
 }
 
 export const NodeRoot = styled(TreeNode.Root)<{
@@ -45,7 +45,7 @@ export const NodeRoot = styled(TreeNode.Root)<{
   color: ${props => getTextColor(props.isSelected)};
 
   background-color: ${props =>
-    props.isSelected ? lighten(color("brand"), 0.6) : "unset"};
+    props.isSelected ? color("brand-light") : "unset"};
 
   padding-left: ${props => props.depth}rem;
   border-radius: 4px;
@@ -55,11 +55,11 @@ export const NodeRoot = styled(TreeNode.Root)<{
   }
 
   &:hover {
-    background-color: ${lighten(color("brand"), 0.6)};
-    color: ${color("brand")};
+    background-color: ${color("brand-light")};
+    color: ${color("text-medium")};
 
     ${ExpandToggleButton} {
-      color: ${color("brand")};
+      color: ${color("text-medium")};
     }
 
     ${SidebarIcon} {
