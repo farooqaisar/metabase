@@ -15,14 +15,14 @@ export const OptionRoot = styled.div<OptionRootProps>`
 export interface OptionIconContainerProps {
   isSelected?: boolean;
 }
-
+// ellucian - modified available charts colors to neutral300 from lighten(brand)
 export const OptionIconContainer = styled.div<OptionIconContainerProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: ${props =>
-    props.isSelected ? color("brand") : lighten("brand")};
+    props.isSelected ? color("brand") : color("colorBrandNeutral300")};
   padding: 0.75rem;
   border-radius: 0.625rem;
 `;

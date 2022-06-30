@@ -16,9 +16,9 @@ HeadBreadcrumbs.propTypes = {
   inactiveColor: PropTypes.string,
   divider: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
 };
-
+// ellucian - updated else part of the color to "text-medium" from "text-light"
 function getBadgeInactiveColor({ variant, isLast }) {
-  return isLast && variant === "head" ? "text-dark" : "text-light";
+  return isLast && variant === "head" ? "text-dark" : "text-medium";
 }
 
 export function HeadBreadcrumbs({

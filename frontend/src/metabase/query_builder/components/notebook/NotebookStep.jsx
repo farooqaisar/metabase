@@ -34,6 +34,7 @@ import {
 } from "./NotebookStep.styled";
 
 // TODO
+// ellucian - updated all notebook step colors to use brand color from "bg-dark" in getcolor
 const STEP_UI = {
   data: {
     title: t`Data`,
@@ -51,7 +52,7 @@ const STEP_UI = {
     title: t`Custom column`,
     icon: "add_data",
     component: ExpressionStep,
-    getColor: () => c("bg-dark"),
+    getColor: () => c("brand"),
   },
   filter: {
     title: t`Filter`,
@@ -86,14 +87,14 @@ const STEP_UI = {
     icon: "smartscalar",
     component: SortStep,
     compact: true,
-    getColor: () => c("bg-dark"),
+    getColor: () => c("brand"),
   },
   limit: {
     title: t`Row limit`,
     icon: "list",
     component: LimitStep,
     compact: true,
-    getColor: () => c("bg-dark"),
+    getColor: () => c("brand"),
   },
 };
 
@@ -213,18 +214,31 @@ export default class NotebookStep extends React.Component {
     );
   }
 }
+// ellucian - modified button colors to get contrast right from text to background and hover
+
+// const ColorButton = styled(Button)`
+//   border: none;q
+//   color: ${({ color }) => (color ? color : c("brand"))};
+//   background-color: ${({ color }) => (color ? lighten(color, 0.96) : null)};
+//   &:hover {
+//     color: ${({ color }) => (color ? darken(color, 0.115) : color("brand"))};
+//     background-color: ${({ color }) =>
+//       color ? lighten(color, 0.5) : lighten(color("brand"), 0.61)};
+//   }
+//   transition: background 300ms;
+// `;
 
 const ColorButton = styled(Button)`
   border: none;
-  color: ${({ color }) => (color ? color : c("text-medium"))};
-  background-color: ${({ color }) => (color ? lighten(color, 0.61) : null)};
+  color: ${c("brand")};
+  background-color: ${c("colorBrandNeutral200")};
   &:hover {
-    color: ${({ color }) => (color ? darken(color, 0.115) : color("brand"))};
-    background-color: ${({ color }) =>
-      color ? lighten(color, 0.5) : lighten(color("brand"), 0.61)};
+    color: ${c("colorBrandNeutral600")};
+    background-color: ${c("colorBrandNeutral300")};
   }
   transition: background 300ms;
 `;
+
 
 const ActionButton = ({ icon, title, color, large, onClick, ...props }) => {
   const button = (

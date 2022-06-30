@@ -50,7 +50,8 @@ function LastEditInfoLabel({ item, user, onClick, className }) {
     <Tooltip tooltip={<DateTime value={timestamp} />}>
       <TextButton
         size="small"
-        className={className}
+        // ellucian - removed class to inherit deafault text color
+        // className={className}
         onClick={onClick}
         data-testid="revision-history-button"
       >{t`Edited ${time} by ${editor}`}</TextButton>

@@ -90,7 +90,7 @@ export const RadioContainerUnderlined = styled(RadioContainer)`
       props.checked ? getSchemeColor(props.colorScheme) : "transparent"};
   padding: 1rem 0;
 `;
-
+// ellucian - updated visualizations option button's background color when not checked, and also updated hover state
 export const RadioContainerBubble = styled(RadioContainer)`
   padding: 0.5rem 1rem;
   border-radius: 10rem;
@@ -100,11 +100,12 @@ export const RadioContainerBubble = styled(RadioContainer)`
   background-color: ${props =>
     props.checked
       ? getSchemeColor(props.colorScheme)
-      : lighten(getSchemeColor(props.colorScheme))};
+      : color("colorBrandNeutral200")};
 
   &:hover {
     background-color: ${props =>
-      props.checked ? "" : lighten(getSchemeColor(props.colorScheme), 0.38)};
+      props.checked ? "" : color("colorBrandNeutral300")};
+    color: ${color("text-dark")};
     transition: background-color 300ms linear;
   }
 `;

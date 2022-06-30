@@ -661,8 +661,9 @@ export default class TableInteractive extends Component {
               ? style.left
               : this.getColumnLeft(style, columnIndex),
           }}
+          // ellucian - updated "text-medium" to "text-dark"
           className={cx(
-            "TableInteractive-cellWrapper TableInteractive-headerCellData text-medium text-brand-hover",
+            "TableInteractive-cellWrapper TableInteractive-headerCellData text-dark text-brand-hover",
             {
               "TableInteractive-cellWrapper--firstColumn": columnIndex === 0,
               "TableInteractive-cellWrapper--lastColumn":

@@ -137,13 +137,13 @@ function Menu(props) {
   const { collectionId, hasWritePermission } = props;
 
   const shouldBeBookmarkable = collectionId !== "root";
-
+// ellucian - removed Events (TimelinesLink) from the list because we've not decided to include it in the product
   return (
     <MenuContainer data-testid="collection-menu">
       {hasWritePermission && <NewCollectionItemMenu {...props} />}
       <EditMenu {...props} />
       <PermissionsLink {...props} />
-      <TimelinesLink {...props} />
+      {/* <TimelinesLink {...props} /> */}
       {shouldBeBookmarkable && <Bookmark {...props} />}
     </MenuContainer>
   );

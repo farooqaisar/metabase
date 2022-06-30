@@ -159,7 +159,7 @@ export const HomePageLink = styled(SidebarLink)`
 export const BrowseLink = styled(SidebarLink)`
   padding-left: 14px;
 `;
-
+// ellucian - updated svg and text color and background hover colors
 export const AddYourOwnDataLink = styled(SidebarLink)`
   background: ${color("brand")};
   border-radius: 8px;
@@ -167,6 +167,9 @@ export const AddYourOwnDataLink = styled(SidebarLink)`
   margin: ${space(1)};
   padding: 2px 6px;
   transition: background-color 0.3s linear;
+  svg {
+    color: ${color("brand-light")} !important;
+  }
 
   @media (prefers-reduced-motion) {
     transition: none;

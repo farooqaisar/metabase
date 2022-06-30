@@ -10,9 +10,9 @@ import { NotebookCell } from "./NotebookCell";
 export const FieldPickerContentContainer = styled.div`
   padding: ${NotebookCell.CONTAINER_PADDING};
 `;
-
+// ellucian - changed opacity value from 0.5 to 0.9
 const StyledIcon = styled(Icon)`
-  opacity: 0.5;
+  opacity: 0.9;
 `;
 
 const propTypes = {

@@ -27,11 +27,11 @@ export const Table = styled.table`
 `;
 
 Table.defaultProps = { className: "ContentTable" };
-
+// ellucian - Landing page table columnheader color update to "text-dark" from "text-medium"
 export const ColumnHeader = styled.th`
   padding: 1em 1em 0.75em !important;
   font-weight: bold;
-  color: ${color("text-medium")};
+  color: ${color("text-dark")};
 `;
 
 export const ItemCell = styled.td`
@@ -64,7 +64,7 @@ SortingIcon.defaultProps = {
 export const SortingControlContainer = styled.div`
   display: flex;
   align-items: center;
-  color: ${props => (props.isActive ? color("text-dark") : "")};
+  color: ${props => (props.isActive ? color("text-dark") : color("text-dark"))};
   cursor: pointer;
   user-select: none;
   .Icon {
@@ -77,10 +77,10 @@ export const SortingControlContainer = styled.div`
     }
   }
 `;
-
+// ellucian - Table content color update to "text-dark" from "text-medium"
 export const TableItemSecondaryField = styled.span`
   font-size: 0.95em;
-  color: ${color("text-medium")};
+  color: ${color("text-dark")};
 `;
 
 export const TBody = styled.tbody`

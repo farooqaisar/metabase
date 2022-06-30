@@ -219,9 +219,9 @@ QuestionTableBadges.propTypes = {
   subHead: PropTypes.bool,
   isLast: PropTypes.bool,
 };
-
+// ellucian - updated the color to "text-medium" from "text-light"
 function QuestionTableBadges({ tables, subHead, hasLink, isLast }) {
-  const badgeInactiveColor = isLast && !subHead ? "text-dark" : "text-light";
+  const badgeInactiveColor = isLast && !subHead ? "text-dark" : "text-medium";
 
   const parts = tables.map(table => (
     <HeadBreadcrumbs.Badge

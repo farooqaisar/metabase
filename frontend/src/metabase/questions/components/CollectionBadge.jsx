@@ -36,7 +36,8 @@ function CollectionBadge({ collection, analyticsContext, className }) {
       to={collection.getUrl()}
       icon={icon}
       activeColor={icon.color}
-      inactiveColor="text-light"
+      // ellucian - updated the inactiveColor to "text-medium" from "text-light"
+      inactiveColor="text-medium"
       className={className}
       data-metabase-event={`${analyticsContext};Collection Badge Click`}
     >

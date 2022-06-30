@@ -39,7 +39,7 @@ export const AdHocViewHeading = styled(ViewHeading)`
 `;
 
 export const SaveButton = styled(Link)`
-  color: ${color("brand")};
+  color: ${color("colorCtaBlueBase")};
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 8px;

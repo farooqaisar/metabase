@@ -38,7 +38,7 @@ const activeColorCSS = css`
 function getTextColor(isSelected: boolean) {
   return isSelected ? color("text-dark") : color("text-dark");
 }
-
+// ellucian - modified hover and background colors to use lighter background and darker text colors
 export const NodeRoot = styled(TreeNode.Root)<{
   hasDefaultIconStyle?: boolean;
 }>`
@@ -56,7 +56,7 @@ export const NodeRoot = styled(TreeNode.Root)<{
 
   &:hover {
     background-color: ${color("brand-light")};
-    color: ${color("text-medium")};
+    color: ${color("text-dark")};
 
     ${ExpandToggleButton} {
       color: ${color("text-medium")};

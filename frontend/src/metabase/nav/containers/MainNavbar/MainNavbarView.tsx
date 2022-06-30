@@ -4,12 +4,13 @@ import { t } from "ttag";
 import { BookmarksType, Collection, User } from "metabase-types/api";
 
 import Link from "metabase/core/components/Link";
-import Icon, { IconProps } from "metabase/components/Icon";
+import Icon, { IconProps, IconWrapper } from "metabase/components/Icon";
 import Icon_Insights from "metabase/components/Icon_ellucian";
 import { Tree } from "metabase/components/tree";
 import TippyPopoverWithTrigger from "metabase/components/PopoverWithTrigger/TippyPopoverWithTrigger";
 
 import ProfileLink from "metabase/nav/components/ProfileLink";
+import { color } from "metabase/lib/colors";
 
 import {
   getCollectionIcon,
@@ -167,7 +168,7 @@ function MainNavbarView({
           )}
         </ul>
       </div>
-      {/* start - ellucian - Documentation and Help Link and movement of IFRAME tag for bottom navbar*/}
+      {/* start - ellucian - Documentation and Help Link and move of IFRAME tag after ProfileLinkContainer for bottom navbar*/}
       {/* {!IFRAMED && ( */}
       <ProfileLinkContainer isOpen={isOpen}>
         {!IFRAMED && (
@@ -179,7 +180,9 @@ function MainNavbarView({
         )}
         <HelpIcon href="https://resources.elluciancloud.com/bundle/ellucian_insights_lrn_getstarted/page/c_about_insights.html">
           {/* <Icon name="help" size={24}/> */}
-          <Icon name="help_filled" size={24} />
+          <IconWrapper>
+          <Icon name="help_filled" size={24} tooltip={t`Documentation and Help`}/>
+          </IconWrapper>
         </HelpIcon>
       </ProfileLinkContainer>
       {/* )}       */}
