@@ -137,7 +137,7 @@ export const AccordionListCell = ({
           onClick={isClickable ? () => onChange(item) : undefined}
         >
           {icon && (
-            <span className="List-item-icon text-default flex align-center">
+            <span className="List-item-icon text-medium flex align-center">
               {icon}
             </span>
           )}

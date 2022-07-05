@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 import ExternalLink from "metabase/core/components/ExternalLink";
 import { color } from "metabase/lib/colors";
-
+// ellucian - updated .Icon text color to "text-medium" from "text-light" for Summarize dropdown list
 export const Item = styled.div`
   display: flex;
 align-items: center;
@@ -15,7 +15,7 @@ align-items: center;
     color: ${color("brand")};
   }
   > .Icon {
-    color: ${color("text-light")};
+    color: ${color("text-medium")};
     margin-right: 0.65em;
   }
   :hover > .Icon {

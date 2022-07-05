@@ -10,9 +10,9 @@
 .List-section-header:hover .Icon {
   color: inherit;
 }
-
+/* ellucian - updated filter drop down and various icons in different UIs to text-medium from text-light  */
 .List-item .Icon {
-  color: var(--color-text-light);
+  color: var(--color-text-medium);
 }
 
 .List-section-header {

@@ -105,7 +105,8 @@ export const RadioContainerBubble = styled(RadioContainer)`
   &:hover {
     background-color: ${props =>
       props.checked ? "" : color("colorBrandNeutral300")};
-    color: ${color("text-dark")};
+    color: ${props =>
+      props.checked ? color("white") : color("text-dark")};
     transition: background-color 300ms linear;
   }
 `;

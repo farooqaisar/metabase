@@ -44,9 +44,10 @@ const colors: Record<string, string> = {
   accent1: colorBrandNeutral500,
   accent2: colorBrandNeutral500,
   accent7: colorBrandNeutral500,
+  "text-light": colorBrandNeutral500,
   "text-dark": colorBrandNeutral600,
   "text-medium": colorBrandNeutral500,
-  "bg-dark": colorBrandNeutral400,
+  "bg-dark": colorBrandNeutral500,
   "bg-medium": colorBrandNeutral300,
   "bg-light": colorBrandNeutral200,
   /* end - ellucian - change in color themes.. later will be updated by path design tokens */
@@ -61,7 +62,6 @@ const colors: Record<string, string> = {
   danger: "#ED6E6E",
   error: "#ED6E6E",
   warning: "#F9CF48",
-  "text-light": "#B8BBC3",
   "text-white": "#FFFFFF",
   "bg-black": "#2E353B",
   "bg-white": "#FFFFFF",
@@ -89,9 +89,9 @@ export type ColorString = string;
 
 export default colors;
 export const aliases: Record<string, string> = {
-  summarize: "accent1",
-  filter: "accent7",
-  database: "accent2",
+  summarize: "brand",
+  filter: "brand",
+  database: "brand",
   dashboard: "brand",
   pulse: "accent4",
   content: "bg-light",

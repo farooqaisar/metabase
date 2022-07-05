@@ -23,7 +23,8 @@ export default function QuestionNotebookButton({
         borderless={!isShowingNotebook}
         primary={isShowingNotebook}
         medium
-        className={cx(className, isShowingNotebook ? undefined : "text-dark", {
+        // ellucian - updated "text-medium" from "text-dark" for notebook Icon
+        className={cx(className, isShowingNotebook ? undefined : "text-medium", {
           "text-brand-hover": !isShowingNotebook,
         })}
         icon="notebook"

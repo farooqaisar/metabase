@@ -492,7 +492,8 @@ function ViewTitleHeaderRightSide(props) {
       {hasExploreResultsLink && <ExploreResultsLink question={question} />}
       {hasRunButton && (
         <RunButtonWithTooltip
-          className={cx("text-brand-hover text-dark hide", {
+        // ellucian - updated "text-medium" from "text-dark" for Refresh Icon
+          className={cx("text-brand-hover text-medium hide", {
             "sm-show": !isShowingNotebook || isNative,
             "text-white-hover": isResultDirty,
           })}

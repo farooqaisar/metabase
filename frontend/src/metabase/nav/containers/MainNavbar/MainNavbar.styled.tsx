@@ -100,7 +100,7 @@ export const SidebarHeadingWrapper = styled.div`
 `;
 // ellucian - changed text-medium to text-dark
 export const SidebarHeading = styled.h4`
-  color: ${color("text-dark")};
+  color: ${color("text-medium")};
   font-weight: 700;
   font-size: 11px;
   text-transform: uppercase;
