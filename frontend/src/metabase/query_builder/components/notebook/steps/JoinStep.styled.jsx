@@ -111,12 +111,11 @@ export const DimensionContainer = styled.div`
   display: flex;
   align-items: center;
 `;
-
+// ellucian - adjusting whiteness of joined tables by removing the opacity: 0.65;
 export const DimensionSourceName = styled.div`
   display: block;
   font-size: 11px;
-  color: ${color("text-white")};
-  opacity: 0.65;
+  color: ${color("text-white")};  
 `;
 
 export const RemoveDimensionIcon = styled(Icon)`

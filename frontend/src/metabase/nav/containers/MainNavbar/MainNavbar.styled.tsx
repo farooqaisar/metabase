@@ -123,7 +123,7 @@ export const CollectionMenuList = styled.ul`
 `;
 
 export const LoadingContainer = styled.div`
-  color: ${color("brand")};
+  color: ${color("text-medium")};
   text-align: center;
 `;
 
@@ -149,7 +149,7 @@ export const ProfileLinkContainer = styled.div<{ isOpen: boolean }>`
   overflow: hidden;
   align-items: center;
   margin-right: ${space(2)};
-  color: ${color("brand")};
+  color: ${color("colorBrandNeutral500")};
 `;
 
 export const HomePageLink = styled(SidebarLink)`

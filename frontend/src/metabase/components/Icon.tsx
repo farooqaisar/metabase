@@ -25,7 +25,7 @@ export const IconWrapper = styled.div<IconWrapperProps>`
   height: 40px;
   border-radius: 99px;
   cursor: pointer;
-  color: ${props => (props.open ? c("brand") : "inherit")};
+  color: ${props => (props.open ? c("colorBrandNeutral500") : "inherit")};
   // special cases for certain icons
   // Icon-share has a taller viewbox than most so to optically center
   // the icon we need to translate it upwards
@@ -43,7 +43,7 @@ export const IconWrapper = styled.div<IconWrapperProps>`
 IconWrapper.defaultProps = {
   hover: {
     backgroundColor: c("bg-medium"),
-    color: c("brand"),
+    color: c("colorBrandNeutral500"),
   },
 };
 

@@ -1,7 +1,7 @@
 /* NOTE: DO NOT ADD COLORS WITHOUT EXTREMELY GOOD REASON AND DESIGN REVIEW
  * NOTE: KEEP SYNCRONIZED WITH COLORS.JS
  */
-:root {
+ :root {
   /* start - ellucian - change in color themes.. later will be updated by path design tokens */
   --color-brand: #5b5e65;
   --color-brand-light: #f8f8f8;
@@ -88,10 +88,10 @@
   --question-color: var(--color-text-medium);
 }
 */
-
+/* ellucian - changed to "--color-text-dark" to "--color-text-medium" for recent history search drop down and other screens */
 .text-default,
 :local(.text-default) {
-  color: var(--color-text-dark);
+  color: var(--color-text-medium);
 }
 
 .text-default-hover:hover {

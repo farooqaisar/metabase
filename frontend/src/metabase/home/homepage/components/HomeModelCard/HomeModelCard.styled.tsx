@@ -2,11 +2,11 @@ import styled from "@emotion/styled";
 import { color } from "metabase/lib/colors";
 import Icon from "metabase/components/Icon";
 import Ellipsified from "metabase/components/Ellipsified";
-
+// ellucian - updated Icon colors from 'text-dark' to 'text-medium'
 export const CardIcon = styled(Icon)`
   display: block;
   flex: 0 0 auto;
-  color: ${color("brand")};
+  color: ${color("text-medium")};
   width: 1rem;
   height: 1rem;
 `;

@@ -4,22 +4,23 @@ import Icon from "metabase/components/Icon";
 import ExternalLink from "metabase/core/components/ExternalLink";
 import { breakpointMinLarge } from "metabase/styled-components/theme";
 
+// ellucian - updated border color from 'focus' to 'text-medium'
 export const CardRoot = styled(ExternalLink)`
   display: flex;
   align-items: center;
   padding: 1rem;
-  border: 1px solid ${color("focus")};
+  border: 1px solid ${color("text-medium")};
   border-radius: 0.5rem;
 
   ${breakpointMinLarge} {
     padding: 1.5rem;
   }
 `;
-
+// ellucian - updated Icon colors from 'text-dark' to 'text-medium'
 export const CardIcon = styled(Icon)`
   display: block;
   flex: 0 0 auto;
-  color: ${color("text-dark")};
+  color: ${color("text-medium")};
   width: 1rem;
   height: 1rem;
 `;

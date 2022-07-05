@@ -17,14 +17,14 @@ function getColorForIconWrapper(props) {
     return color("brand");
   }
 }
-
+// ellucian - updated "getColorForIconWrapper" to color("text-medium") for search list icons
 export const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 32px;
   height: 32px;
-  color: ${getColorForIconWrapper};
+  color: ${color("text-medium")};
   margin-right: 10px;
   flex-shrink: 0;
 `;
