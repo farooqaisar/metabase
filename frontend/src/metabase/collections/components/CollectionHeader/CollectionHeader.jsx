@@ -63,7 +63,7 @@ function PermissionsLink({
     <Tooltip tooltip={tooltip}>
       <Link to={link}>
         <IconWrapper>
-          <Icon name="lock" />
+          <Icon name="lock" color={"text-medium"}/>
         </IconWrapper>
       </Link>
     </Tooltip>

@@ -89,9 +89,9 @@ export type ColorString = string;
 
 export default colors;
 export const aliases: Record<string, string> = {
-  summarize: "brand",
-  filter: "brand",
-  database: "brand",
+  summarize: "colorBrandNeutral500",
+  filter: "colorBrandNeutral500",
+  database: "colorBrandNeutral500",
   dashboard: "brand",
   pulse: "accent4",
   content: "bg-light",

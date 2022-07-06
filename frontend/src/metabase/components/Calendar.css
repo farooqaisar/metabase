@@ -47,7 +47,7 @@
 .Calendar-day-name {
   color: inherit !important;
 }
-
+/* updated background color to use accent1 from accent7 */
 .Calendar-day--selected,
 .Calendar-day--selected-end {
   color: white !important;

@@ -73,7 +73,7 @@ export const DimensionListItemTitle = styled.div`
   font-size: 0.875rem;
   font-weight: 700;
 `;
-
+// ellucian - updated subDimensionButton color property alpha value to '0.9' from '0.5' for the contrast ratio
 const selectedStyle = css`
   ${DimensionListItemContent},
   ${DimensionListItemIcon} {
@@ -83,7 +83,7 @@ const selectedStyle = css`
 
   ${SubDimensionButton} {
     visibility: visible;
-    color: ${alpha("white", 0.5)};
+    color: ${alpha("white", 0.9)};
     border-color: ${alpha("text-dark", 0.1)};
   }
 

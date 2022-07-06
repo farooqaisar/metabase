@@ -601,12 +601,13 @@
 .List-item--customfield .List-item-title {
   color: var(--color-brand);
 }
-
+/* ellucian - query builder binning option font color update to white */
 .FieldList-grouping-trigger {
   display: flex;
   visibility: hidden;
   border-left: 2px solid color-mod(var(--filter-color) alpha(-90%));
-  color: color-mod(var(--color-text-white) alpha(-50%));
+  /* color: color-mod(var(--color-text-white) alpha(-90%)); */
+  color: var(--color-text-white);
 }
 
 .List-item:not(.List-item--disabled):hover .FieldList-grouping-trigger,

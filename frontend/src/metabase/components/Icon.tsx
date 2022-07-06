@@ -15,7 +15,7 @@ type IconWrapperProps = {
   open?: boolean;
   hover?: React.CSSProperties;
 };
-
+// ellucian - updated iconwrapper color to use nueutral500 on various screens
 export const IconWrapper = styled.div<IconWrapperProps>`
   ${space};
   display: flex;

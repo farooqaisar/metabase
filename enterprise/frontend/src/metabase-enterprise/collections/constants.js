@@ -5,12 +5,12 @@ export const REGULAR_COLLECTION = {
   name: t`Regular`,
   icon: "folder",
 };
-
+// ellucian - updated color property to use "brand" color from "saturated-yellow"
 export const OFFICIAL_COLLECTION = {
   type: "official",
   name: t`Official`,
   icon: "badge",
-  color: "saturated-yellow",
+  color: "brand",
   tooltips: {
     default: t`Official collection`,
     belonging: t`Belongs to an Official collection`,
