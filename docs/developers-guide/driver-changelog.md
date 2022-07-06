@@ -1,4 +1,8 @@
-# Driver Interface Changelog
+---
+title: Driver interface changelog
+---
+
+# Driver interface changelog
 
 ## Metabase 0.43.0
 

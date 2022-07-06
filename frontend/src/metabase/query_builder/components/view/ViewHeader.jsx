@@ -403,8 +403,10 @@ function ViewTitleHeaderRightSide(props) {
   const isReadOnlyQuery = query.readOnly();
   const canEditQuery = !isReadOnlyQuery;
   const canRunAdhocQueries = !isReadOnlyQuery;
+  const canNest = query.canNest();
   const hasExploreResultsLink =
     isNative &&
+    canNest &&
     isSaved &&
     canRunAdhocQueries &&
     MetabaseSettings.get("enable-nested-queries");
@@ -492,7 +494,7 @@ function ViewTitleHeaderRightSide(props) {
       {hasExploreResultsLink && <ExploreResultsLink question={question} />}
       {hasRunButton && (
         <RunButtonWithTooltip
-        // ellucian - updated "text-medium" from "text-dark" for Refresh Icon
+          // ellucian - updated "text-medium" from "text-dark" for Refresh Icon
           className={cx("text-brand-hover text-medium hide", {
             "sm-show": !isShowingNotebook || isNative,
             "text-white-hover": isResultDirty,

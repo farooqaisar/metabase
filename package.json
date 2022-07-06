@@ -119,7 +119,7 @@
     "@ellucian/ds-icons": "https://cdn.elluciancloud.com/assets/EDS2/6.0.0/umd/path_design_system_icons.tgz",
     "@ellucian/react-design-system": "https://cdn.elluciancloud.com/assets/EDS2/6.0.0/umd/path_design_system.tgz",
     "@emotion/babel-plugin": "^11.7.2",
-    "@percy/cli": "^1.2.1",
+    "@percy/cli": "^1.3.0",
     "@percy/cypress": "^3.1.1",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",

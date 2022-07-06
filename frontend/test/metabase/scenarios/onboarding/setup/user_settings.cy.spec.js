@@ -1,5 +1,5 @@
 // Migrated from frontend/test/metabase/user/UserSettings.integ.spec.js
-import { restore } from "__support__/e2e/cypress";
+import { restore } from "__support__/e2e/helpers";
 import { USERS } from "__support__/e2e/cypress_data";
 const { first_name, last_name, email, password } = USERS.normal;
 
@@ -90,6 +90,31 @@ describe("user > settings", () => {
     cy.findByLabelText("gear icon").click();
     cy.findByText("Sign out").click();
     cy.findByText("Sign in to Metabase");
+  });
+
+  it("should validate form values (metabase#23259)", () => {
+    cy.signInAsNormalUser();
+    cy.visit("/account/password");
+
+    // Validate common passwords
+    cy.findByLabelText("Create a password")
+      .as("passwordInput")
+      .type("qwerty123")
+      .blur();
+
+    cy.contains("password is too common");
+    cy.get("@passwordInput").clear();
+
+    // Validate invalid current password
+    cy.findByLabelText("Current password")
+      .as("currentPassword")
+      .type("invalid");
+
+    cy.get("@passwordInput").type("new_password1");
+    cy.findByLabelText("Confirm your password").type("new_password1");
+
+    cy.button("Save").click();
+    cy.contains("Invalid password");
   });
 
   describe("when user is authenticated via ldap", () => {
