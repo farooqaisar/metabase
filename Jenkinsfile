@@ -29,7 +29,6 @@ node('ec2-worker-u18-single-large') {
         sh '''
             make jarBuild
         ''' 
-        currentBuild.displayName = "#${env.BUILD_NUMBER}-${env.repoName}"      
     }
     stage ( 'Upload jar to Artifactory' ) {
         env.version= sh(
