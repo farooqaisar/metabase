@@ -23,9 +23,9 @@ node('ec2-worker-u18-single-large') {
                         returnStdout: true,
                         script: "echo ${env.BRANCH_NAME}").trim()
         echo 'repository_branch is' + env.repository_branch
-        currentBuild.displayName = "#${env.BUILD_NUMBER}-${env.repoName}-${env.repository_branch}"
+        currentBuild.displayName = "#${env.BUILD_NUMBER}-${env.repoName}-${env.repository_branch}-${env.shortCommit}"
     }
-    /*stage ( 'Build' ) {
+    stage ( 'Build' ) {
         sh '''
             make jarBuild
         ''' 
@@ -35,14 +35,29 @@ node('ec2-worker-u18-single-large') {
         env.version= sh(
             returnStdout: true,
             script: "cat package.json | jq -r .version").trim()
-        sh 'echo ${version} > metabase-jar.info'   
+        env.fullVersion = version + "." + shortCommit
+        sh 'echo ${fullVersion} > metabase-jar.info' 
+        sh 'cat metabase-jar.info'
+        rtUpload (
+            serverId: 'ArtifactoryProd',
+            spec: '''{
+                "files": [
+                    {
+                        "pattern": "metabase-jar.info",
+                        "target": "eii-local/metabase-jar/$fullVersion/"
+                    }
+                ]
+            }''',
+            buildName: 'metabase.jar',
+            buildNumber: version
+        )
         rtUpload (
             serverId: 'ArtifactoryProd',
             spec: '''{
                 "files": [
                     {
                         "pattern": "metabase.jar",
-                        "target": "eii-local/metabase-jar/$version/"
+                        "target": "eii-local/metabase-jar/$fullVersion/"
                     }
                 ]
             }''',
@@ -75,7 +90,8 @@ node('ec2-worker-u18-single-large') {
             buildName: 'metabase.jar',
             buildNumber: version
         )
-    }*/
+    }
     //dockerBuilder([publish: true, publishBranches:['master','develop'], runUnitTests: false, runIntegrationTests: false, slackChannel: 'team-analytics-cicd'])
      
 }
+
