@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { color } from "metabase/lib/colors";
 import Icon from "metabase/components/Icon";
 import Ellipsified from "metabase/components/Ellipsified";
-// ellucian - updated Icon colors from 'text-dark' to 'text-medium'
+// ellucian - updated Icon colors from 'text-dark' to 'text-medium' for the Home Screen
 export const CardIcon = styled(Icon)`
   display: block;
   flex: 0 0 auto;

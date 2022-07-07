@@ -16,7 +16,7 @@ function Sidebar({ closeIsDisabled, children, onClose, onCancel }) {
   return (
     <aside
       style={{ width: WIDTH, minWidth: WIDTH }}
-      className="flex flex-column border-left bg-white"
+      className="flex flex-column border-left bg-white text-medium"
     >
       <div className="flex flex-column flex-auto overflow-y-auto">
         {children}

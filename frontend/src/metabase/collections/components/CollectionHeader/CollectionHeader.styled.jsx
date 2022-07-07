@@ -50,11 +50,12 @@ export const Container = styled.div`
     padding-top: ${space(1)};
   }
 `;
-
+// ellucian - added neutral color for collection header icons
 export const MenuContainer = styled.div`
   display: flex;
   margin-top: ${space(1)};
   align-self: start;
+  color: ${color("colorBrandNeutral500")};
 `;
 
 export const DescriptionTooltipIcon = styled(Icon)`

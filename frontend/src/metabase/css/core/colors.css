@@ -14,6 +14,9 @@
   --color-bg-dark: #b2b3b7;
   --color-bg-medium: #d9d9d9;
   --color-bg-light: #f8f8f8;
+  --color-text-light-ellucian: #b8bbc3;
+  --color-text-medium-ellucian:#5b5e65;
+  --color-text-dark-ellucian: #151618;
   /* end - ellucian - change in color themes.. later will be updated by path design tokens */
   --color-accent3: #ef8c8c;
   --color-accent4: #f9d45c;
@@ -376,4 +379,14 @@
 }
 .text-dark {
   color: var(--color-text-dark);
+}
+/* ellucian neutral colors */
+.text-light-ellucian {
+  color: var(--color-text-light-ellucian);
+}
+.text-medium-ellucian {
+  color: var(--color-text-medium-ellucian);
+}
+.text-dark-ellucian {
+  color: var(--color-text-dark-ellucian);
 }

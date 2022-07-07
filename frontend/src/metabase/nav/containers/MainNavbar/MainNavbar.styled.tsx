@@ -98,7 +98,7 @@ export const SidebarHeadingWrapper = styled.div`
   align-items: center;
   margin-bottom: ${space(1)};
 `;
-// ellucian - changed text-medium to text-dark
+// ellucian - changed to text-medium from text-dark
 export const SidebarHeading = styled.h4`
   color: ${color("text-medium")};
   font-weight: 700;
