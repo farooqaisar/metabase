@@ -15,6 +15,9 @@ node('ec2-worker-u18-single-large') {
     checkout scm
     
     stage ( 'Setup Build' ) {
+        env.commit_id = sh(script: 'git rev-parse HEAD', , returnStdout: true).trim()
+        echo "commit_id:" + commit_id
+        env.shortCommit = commit_id.substring(0,5).trim()
         env.repoName = 'eii-irt-source' 
         env.repository_branch = sh(
                         returnStdout: true,
@@ -22,7 +25,7 @@ node('ec2-worker-u18-single-large') {
         echo 'repository_branch is' + env.repository_branch
         currentBuild.displayName = "#${env.BUILD_NUMBER}-${env.repoName}-${env.repository_branch}"
     }
-    stage ( 'Build' ) {
+    /*stage ( 'Build' ) {
         sh '''
             make jarBuild
         ''' 
@@ -72,7 +75,7 @@ node('ec2-worker-u18-single-large') {
             buildName: 'metabase.jar',
             buildNumber: version
         )
-    }
+    }*/
     //dockerBuilder([publish: true, publishBranches:['master','develop'], runUnitTests: false, runIntegrationTests: false, slackChannel: 'team-analytics-cicd'])
      
 }
