@@ -10,7 +10,7 @@ import Link from "metabase/core/components/Link";
 import { NAV_SIDEBAR_WIDTH } from "metabase/nav/constants";
 
 import { darken, color, lighten } from "metabase/lib/colors";
-
+// ellucian - updated condition to keep sidebar icon colors the same 500 neutral
 export const SidebarIcon = styled(Icon)<{
   color?: string | null;
   isSelected: boolean;
@@ -18,7 +18,9 @@ export const SidebarIcon = styled(Icon)<{
   ${props =>
     !props.color &&
     css`
-      color: ${props.isSelected ? color("brand") : color("brand")};
+      color: ${props.isSelected
+        ? color("colorBrandNeutral500")
+        : color("colorBrandNeutral500")};
     `}
 `;
 
