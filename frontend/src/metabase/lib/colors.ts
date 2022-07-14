@@ -27,6 +27,8 @@ import {
   saffron400,
   tangerine400,
 } from "@ellucian/react-design-system/core/styles/tokens";
+// import { useThemeInfo } from "@ellucian/experience-extension/extension-utilities";
+// const { dashboardBackgroundColor, primaryColor, secondaryColor, ctaColors } = useThemeInfo();
 
 // NOTE: DO NOT ADD COLORS WITHOUT EXTREMELY GOOD REASON AND DESIGN REVIEW
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS

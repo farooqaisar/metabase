@@ -133,7 +133,8 @@ function MainNavbarView({
           />
         </SidebarSection>
         <ul>
-          {hasDataAccess && !IFRAMED && (
+          {/* ellucian - Need to show Browse Data as in embeded app so taking out && !IFRAME clause after hasDataaccess */}
+          {hasDataAccess && (
             <SidebarSection>
               <SidebarHeadingWrapper>
                 <SidebarHeading>{t`Data`}</SidebarHeading>
@@ -150,7 +151,8 @@ function MainNavbarView({
               >
                 {t`Browse data`}
               </BrowseLink>
-              {!hasOwnDatabase && (
+              {/* ellucian - Add your own data removed */}
+              {/* {!hasOwnDatabase && (
                 <AddYourOwnDataLink
                   icon="add"
                   url={ADD_YOUR_OWN_DATA_URL}
@@ -163,7 +165,7 @@ function MainNavbarView({
                 >
                   {t`Add your own data`}
                 </AddYourOwnDataLink>
-              )}
+              )} */}
             </SidebarSection>
           )}
         </ul>
