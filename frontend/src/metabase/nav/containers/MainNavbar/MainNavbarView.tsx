@@ -133,7 +133,7 @@ function MainNavbarView({
           />
         </SidebarSection>
         <ul>
-          {/* ellucian - Need to show Browse Data as in embeded app so taking out && !IFRAME clause after hasDataaccess */}
+          {/* ellucian - Need to show Browse Data in embeded app so taking out '&& !IFRAME' clause after hasDataaccess */}
           {hasDataAccess && (
             <SidebarSection>
               <SidebarHeadingWrapper>
@@ -183,12 +183,16 @@ function MainNavbarView({
         <HelpIcon href="https://resources.elluciancloud.com/bundle/ellucian_insights_lrn_getstarted/page/c_about_insights.html">
           {/* <Icon name="help" size={24}/> */}
           <IconWrapper>
-          <Icon name="help_filled" size={24} tooltip={t`Documentation and Help`}/>
+            <Icon
+              name="help_filled"
+              size={24}
+              tooltip={t`Documentation and Help`}
+            />
           </IconWrapper>
         </HelpIcon>
       </ProfileLinkContainer>
       {/* )}       */}
-      {/* start - ellucian - Documentation and Help Link and movement of IFRAME tag for bottom navbar*/}
+      {/* end - ellucian - Documentation and Help Link and movement of IFRAME tag for bottom navbar*/}
     </SidebarContentRoot>
   );
 }

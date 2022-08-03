@@ -52,6 +52,7 @@ const EMBEDDED_ROUTES_WITH_NAVBAR = [
   HOMEPAGE_PATTERN,
   /^\/collection\/.*/,
   /^\/archive/,
+  /^\/database/,
 ];
 
 interface AppStateProps {
@@ -135,7 +136,8 @@ function App({
         <div className="spread">
           {hasAppBar && <AppBar />}
           <AppContentContainer hasAppBar={hasAppBar} isAdminApp={isAdminApp}>
-            {hasNavbar && <Navbar />}
+            {/* {hasNavbar && <Navbar />} elllucian - Not checking HasNavbar because ellucian needs it to be displayed all the time*/}
+            <Navbar />
             <AppContent>
               {errorPage ? getErrorComponent(errorPage) : children}
             </AppContent>
