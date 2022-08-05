@@ -35,7 +35,9 @@ const ArchivedItem = ({
       />
     </IconContainer>
     {name}
-    {isAdmin && (onUnarchive || onDelete) && (
+    {/* ellucian - ellucian need to show unarchive options to non-admin users sot disabling just for admins option */}
+    {/* {isAdmin && (onUnarchive || onDelete) && ( */}
+    {(onUnarchive || onDelete) && (
       <span className="ml-auto mr2">
         {onUnarchive && (
           <Tooltip tooltip={t`Unarchive this ${type}`}>

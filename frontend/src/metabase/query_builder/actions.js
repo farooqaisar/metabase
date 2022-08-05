@@ -1374,13 +1374,15 @@ export const runQuestionQuery = ({
     dispatch.action(RUN_QUERY, { cancelQueryDeferred });
   };
 };
-
+// ellucian - modifying broser tab by removing 'Doing Science and Still here text strings'
 const loadStartUIControls = createThunkAction(
   LOAD_START_UI_CONTROLS,
   () => (dispatch, getState) => {
-    dispatch(setDocumentTitle(t`Doing Science...`));
+    // dispatch(setDocumentTitle(t`Doing Science...`));
+    dispatch(setDocumentTitle(t``));
     const timeoutId = setTimeout(() => {
-      dispatch(setDocumentTitle(t`Still Here...`));
+      // dispatch(setDocumentTitle(t`Still Here...`));
+      dispatch(setDocumentTitle(t``));
     }, 10000);
     dispatch(setDocumentTitleTimeoutId(timeoutId));
   },

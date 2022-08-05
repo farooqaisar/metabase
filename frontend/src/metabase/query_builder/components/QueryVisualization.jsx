@@ -121,6 +121,7 @@ export const VisualizationRunningState = ({ className }) => (
   >
     <LoadingSpinner />
     <h2 className="Loading-message text-brand text-uppercase my3">
+      {/* ellucian - removing 'Doing Science' from the visualization loading status */}
       {/* {t`Doing science`}... */}
     </h2>
   </div>
