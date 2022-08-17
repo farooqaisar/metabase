@@ -1,7 +1,7 @@
 FROM 434313288222.dkr.ecr.us-east-1.amazonaws.com/golden-images/ubuntu-node-16.x:latest
-
+USER root
 ENV DEBIAN_FRONTEND=noninteractive
-RUN mkdir -p /app &&  mkdir -p /plugins
+RUN mkdir -p /app &&  mkdir -p /plugins && chown appuser:appuser /app && chown appuser:appuser /plugins
 COPY . /app
 RUN cd app \
   && apt-get update &&  apt-get install -y software-properties-common apt-utils git \
@@ -13,6 +13,7 @@ RUN cd app \
   && npm install --global yarn --reg https://artifactory.devops.ellucian.com/artifactory/api/npm/npmjs \
   && export MB_EDITION=ee && export MB_VERSION=1.43.2 && ./bin/build
 
+USER appuser
 EXPOSE 3000
 
 ENTRYPOINT ["/bin/sh","sleep 360"]
