@@ -20,12 +20,13 @@ export default function BrowseHeader({ crumbs }) {
             to="reference"
             data-metabase-event={`NavBar;Reference`}
           >
-            <div className="flex align-center text-medium text-brand-hover">
+            {/* ellucian - removed browse header from database-schema-table screens */}
+            {/* <div className="flex align-center text-medium text-brand-hover">
               <Icon className="flex align-center" size={14} name="reference" />
               <span className="ml1 flex align-center text-bold">
                 {t`Learn about our data`}
               </span>
-            </div>
+            </div> */}
           </Link>
         </div>
       </BrowseHeaderContent>
