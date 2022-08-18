@@ -123,7 +123,8 @@ const TableBrowserItemButtons = ({ tableId, dbId, xraysEnabled }) => {
           />
         </TableActionLink>
       )}
-      <TableActionLink
+      {/* ellucian - removed 'learn more about table' icon and link from browse data at the table level */}
+      {/* <TableActionLink
         to={`/reference/databases/${dbId}/tables/${tableId}`}
         data-metabase-event={`${ANALYTICS_CONTEXT};Table Item;Reference Click`}
       >
@@ -132,7 +133,7 @@ const TableBrowserItemButtons = ({ tableId, dbId, xraysEnabled }) => {
           tooltip={t`Learn about this table`}
           color={color("text-medium")}
         />
-      </TableActionLink>
+      </TableActionLink> */}
     </Fragment>
   );
 };
