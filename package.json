@@ -1,7 +1,7 @@
 {
   "name": "metabase",
   "private": true,
-  "version": "1.43.4",
+  "version": "1.43.7",
   "description": "Metabase Analytics Report Server",
   "repository": "https://github.com/metabase/metabase",
   "license": "private",
