@@ -12668,6 +12668,11 @@ loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4
     emojis-list "^3.0.0"
     json5 "^1.0.1"
 
+loader-utils@^3.2.0:
+  version "3.2.0"
+  resolved "https://artifactory.devops.ellucian.com/artifactory/api/npm/npmjs/loader-utils/-/loader-utils-3.2.0.tgz#bcecc51a7898bee7473d4bc6b845b23af8304d4f"
+  integrity sha1-vOzFGniYvudHPUvGuEWyOvgwTU8=
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://artifactory.devops.ellucian.com/artifactory/api/npm/npmjs/locate-path/-/locate-path-2.0.0.tgz"
